@@ -1,6 +1,6 @@
 # Design Uncertainty Taxonomy
 
-A GitHub repository for maintaining and publishing a SKOS taxonomy on design uncertainty and mitigation strategies in the building and construction domain.
+A GitHub repository for maintaining and publishing a SKOS [taxonomy](https://uncertaintyinaeco.github.io/DesignUncertainty_taxonomy/) on design uncertainty and mitigation strategies in the building and construction domain.
 
 ## Overview
 
