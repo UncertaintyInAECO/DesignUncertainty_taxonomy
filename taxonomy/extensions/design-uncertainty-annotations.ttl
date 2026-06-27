@@ -1,44 +1,28 @@
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix du: <https://w3id.org/design-uncertainty/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix owl:  <http://www.w3.org/2002/07/owl#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix vann:  <http://purl.org/vocab/vann/> .
-
-du:
-    a owl:Ontology ;
-    rdfs:label "Design Uncertainty Model"@en ;
-    rdfs:comment "A combined ontology and SKOS vocabulary for representing design uncertainty and mitigation strategies in building projects."@en ;
-    dct:title "Design Uncertainty Model"@en ;
-    dct:description "A semantic model combining a SKOS taxonomy of design uncertainty and mitigation concepts with additional classes and properties for phase, stakeholder, nature, object, and action."@en ;
-    dct:creator "Bloch, T.; Isaac, S.; Boscariol, M.; Waltzer, A.; Tagliabue, L.C."@en ;
-    dct:created "2026-06-27"^^xsd:date ;
-    dct:modified "2026-06-27"^^xsd:date ;
-    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
-    vann:preferredNamespacePrefix "du" ;
-    vann:preferredNamespaceUri "https://w3id.org/design-uncertainty/" ;
-    owl:versionInfo "0.1.0" ;
-    rdfs:seeAlso du:scheme .
-
-du:scheme
-    a skos:ConceptScheme ;
-    skos:prefLabel "Design Uncertainty Taxonomy"@en ;
-    skos:definition "A concept scheme describing types of design uncertainty and mitigation strategies in building projects."@en ;
-    dct:title "Design Uncertainty Taxonomy"@en ;
-    dct:description "The SKOS concept scheme used within the Design Uncertainty Model."@en ;
-    dct:creator "Bloch, T.; Isaac, S.; Boscariol, M.; Waltzer, A.; Tagliabue, L.C."@en ;
-    dct:created "2026-06-27"^^xsd:date ;
-    dct:modified "2026-06-27"^^xsd:date ;
-    dct:created "2026-06-27"^^xsd:date ;
-    dct:language "en" ;
-    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
-    skos:hasTopConcept <https://w3id.org/design-uncertainty/Uncertainty>, <https://w3id.org/design-uncertainty/Mitigation> .
 
 du:ActionVerb a rdfs:Class .
 
-du:Mitigation a rdfs:Class .
+du:Mitigation a rdfs:Class,
+        skos:Concept ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:narrower du:U_T29,
+        du:U_T30,
+        du:U_T31,
+        du:U_T32,
+        du:U_T33,
+        du:U_T34,
+        du:U_T35,
+        du:U_T36 ;
+    skos:prefLabel "Mitigation strategy" ;
+    skos:topConceptOf <https://w3id.org/design-uncertainty> .
 
 du:Nature a rdfs:Class .
 
@@ -48,706 +32,39 @@ du:Phase a rdfs:Class .
 
 du:Stakeholder a rdfs:Class .
 
-du:Uncertainty a rdfs:Class .
+du:Uncertainty a rdfs:Class,
+        skos:Concept ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:narrower du:U_T01,
+        du:U_T02,
+        du:U_T03,
+        du:U_T04,
+        du:U_T05,
+        du:U_T06,
+        du:U_T07,
+        du:U_T08 ;
+    skos:prefLabel "Uncertainty" ;
+    skos:topConceptOf <https://w3id.org/design-uncertainty> .
+
+du: a owl:Ontology ;
+    rdfs:label "Design Uncertainty Model"@en ;
+    dct:created "2026-06-27"^^xsd:date ;
+    dct:creator "Bloch, T.; Isaac, S.; Boscariol, M.; Waltzer, A.; Tagliabue, L.C."@en ;
+    dct:description "A semantic model combining a SKOS taxonomy of design uncertainty and mitigation concepts with additional classes and properties for phase, stakeholder, nature, object, and action."@en ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:modified "2026-06-27"^^xsd:date ;
+    dct:title "Design Uncertainty Model"@en ;
+    vann:preferredNamespacePrefix "du" ;
+    vann:preferredNamespaceUri "https://w3id.org/design-uncertainty/" ;
+    rdfs:comment "A combined ontology and SKOS vocabulary for representing design uncertainty and mitigation strategies in building projects."@en ;
+    rdfs:seeAlso du:scheme ;
+    owl:versionInfo "0.1.0" .
 
 du:IsOfNature a rdf:Property ;
     rdfs:label "is of nature"@en ;
     rdfs:domain du:Uncertainty ;
     rdfs:range du:Nature .
-
-du:U_T05 a skos:Concept,
-        du:Uncertainty ;
-    skos:definition "Uncertainty about how the building will perform over time in real conditions, including degradation, changing performance expectations, and gaps between predicted and actual performance."@en ;
-    skos:prefLabel "Performance uncertainty"@en ;
-    du:level "Type"^^xsd:string .
-
-du:U_T08 a skos:Concept,
-        du:Uncertainty ;
-    skos:definition "Uncertainty about whether and when a project can be delivered as intended due to viability, funding, or dependence on external enabling conditions (e.g., infrastructure capacity and connections)."@en ;
-    skos:prefLabel "Project realization & feasibility uncertainty"@en ;
-    du:level "Type"^^xsd:string .
-
-du:U_T09 a skos:Concept,
-        du:Uncertainty ;
-    skos:broader du:U_T06 ;
-    skos:definition "Uncertainty about the timing and conditions of permits, including late or changing authority demands."@en ;
-    skos:prefLabel "Permitting timeline unpredictability"@en ;
-    du:IsOfNature du:nature_epistemic,
-        du:nature_strategic ;
-    du:addressesObject du:object_regulations ;
-    du:emergesInPhase du:phase_initiation-feasibility ;
-    du:introducedBy du:stakeholder_regulators-authorities ;
-    du:level "Instance"^^xsd:string ;
-    du:notes "Most mentioned"@en .
-
-du:U_T10 a skos:Concept,
-        du:Uncertainty ;
-    skos:broader du:U_T01 ;
-    skos:definition "Uncertainty arising when users/clients cannot clearly articulate needs, or from insufficient baseline data about users, demand, and context (e.g., behaviors, needs, projections), reducing confidence in requirement-setting and making the brief incomplete and unstable."@en ;
-    skos:prefLabel "Unclear project objective and needs"@en ;
-    du:IsOfNature du:nature_epistemic ;
-    du:addressesObject du:object_requirements-brief ;
-    du:emergesInPhase du:phase_briefing-requirements ;
-    du:evidenceSource "Interview framework"@en ;
-    du:introducedBy du:stakeholder_client-owner ;
-    du:level "Instance"^^xsd:string ;
-    du:notes "Most mentioned"@en .
-
-du:U_T11 a skos:Concept,
-        du:Uncertainty ;
-    skos:broader du:U_T01 ;
-    skos:definition "Uncertainty arising when client decisions change unpredictably over time, sometimes because of misunderstood approved designs or requirements, leading to late corrections and change requests."@en ;
-    skos:prefLabel "Client decision instability"@en ;
-    du:IsOfNature du:nature_epistemic,
-        du:nature_strategic ;
-    du:addressesObject du:object_decisions-governance ;
-    du:emergesInPhase du:phase_design ;
-    du:evidenceSource "Interview framework"@en ;
-    du:introducedBy du:stakeholder_client-owner ;
-    du:level "Instance"^^xsd:string .
-
-du:U_T12 a skos:Concept,
-        du:Uncertainty ;
-    skos:broader du:U_T01 ;
-    skos:definition "Uncertainty arising when a developer/brand defines requirements on behalf of an unknown or absent end user, and later end-user involvement triggers significant requirement changes."@en ;
-    skos:prefLabel "Missrepresented end user"@en ;
-    du:IsOfNature du:nature_epistemic ;
-    du:addressesObject du:object_requirements-brief ;
-    du:emergesInPhase du:phase_briefing-requirements ;
-    du:evidenceSource "Interview framework"@en ;
-    du:introducedBy du:stakeholder_client-owner ;
-    du:level "Instance"^^xsd:string .
-
-du:U_T13 a skos:Concept,
-        du:Uncertainty ;
-    skos:broader du:U_T07 ;
-    skos:definition "Uncertainty arising from shifting market conditions (demand, expectations, price volatility, sector trends) that force changes in targets, specifications."@en ;
-    skos:prefLabel "Market volatility"@en ;
-    du:IsOfNature du:nature_aleatory ;
-    du:addressesObject du:object_market-demand ;
-    du:emergesInPhase du:phase_initiation-feasibility ;
-    du:evidenceSource "Interview framework"@en ;
-    du:introducedBy du:stakeholder_market-actors ;
-    du:level "Instance"^^xsd:string .
-
-du:U_T14 a skos:Concept,
-        du:Uncertainty ;
-    skos:broader du:U_T03 ;
-    skos:definition "Uncertainty arising from the non-repeatable nature of design work, where requirements cannot be deterministically mapped to solutions and must be continuously interpreted and negotiated during the process, especially with the client."@en ;
-    skos:prefLabel "Project uniqueness"@en ;
-    du:IsOfNature du:nature_epistemic ;
-    du:addressesObject du:object_design-solution-technical-definition ;
-    du:emergesInPhase du:phase_design ;
-    du:evidenceSource "Interview framework"@en ;
-    du:introducedBy du:stakeholder_designers ;
-    du:level "Instance"^^xsd:string .
-
-du:U_T15 a skos:Concept,
-        du:Uncertainty ;
-    skos:broader du:U_T02 ;
-    skos:definition "Uncertainty arising from the inability to predict how building uses, functional requirements, and technologies will evolve over the long operational life of the building, which affects early decisions on systems zoning, service distribution, and maintainability."@en ;
-    skos:prefLabel "Uncertain future needs and uses"@en ;
-    du:IsOfNature du:nature_aleatory ;
-    du:addressesObject du:object_flexibility-reuse-circularity ;
-    du:emergesInPhase du:phase_design ;
-    du:evidenceSource "Interview framework"@en ;
-    du:introducedBy du:stakeholder_end-users ;
-    du:level "Instance"^^xsd:string .
-
-du:U_T16 a skos:Concept,
-        du:Uncertainty ;
-    skos:broader du:U_T03 ;
-    skos:definition "Uncertainty arising when design leadership, coordination, and multidisciplinary integration are insufficient"@en ;
-    skos:prefLabel "Weak design management and design coordination"@en ;
-    du:IsOfNature du:nature_strategic ;
-    du:addressesObject du:object_team-coordination-roles ;
-    du:emergesInPhase du:phase_design ;
-    du:evidenceSource "Interview framework"@en ;
-    du:introducedBy du:stakeholder_designers ;
-    du:level "Instance"^^xsd:string ;
-    du:notes "Most mentioned"@en .
-
-du:U_T17 a skos:Concept,
-        du:Uncertainty ;
-    skos:broader du:U_T03 ;
-    skos:definition "Uncertainty arising from design outputs that are incomplete, under-specified, or not executable at tender time, which shifts unresolved decisions into execution."@en ;
-    skos:prefLabel "Low quality / incomplete design deliverables at tender"@en ;
-    du:IsOfNature du:nature_epistemic ;
-    du:addressesObject du:object_information-documentation ;
-    du:emergesInPhase du:phase_design ;
-    du:evidenceSource "Interview framework"@en ;
-    du:introducedBy du:stakeholder_designers ;
-    du:level "Instance"^^xsd:string ;
-    du:notes "Most mentioned"@en .
-
-du:U_T18 a skos:Concept,
-        du:Uncertainty ;
-    skos:broader du:U_T03 ;
-    skos:definition "Uncertainty arising from iterative “ping-pong” negotiation between disciplines, requiring compromises between the vision and whether it is technically/contractually feasible."@en ;
-    skos:prefLabel "Interactive design process"@en ;
-    du:IsOfNature du:nature_epistemic ;
-    du:addressesObject du:object_design-solution-technical-definition ;
-    du:emergesInPhase du:phase_design ;
-    du:evidenceSource "Interview framework"@en ;
-    du:introducedBy du:stakeholder_designers ;
-    du:level "Instance"^^xsd:string .
-
-du:U_T19 a skos:Concept,
-        du:Uncertainty ;
-    skos:broader du:U_T03 ;
-    skos:definition "Uncertainty arising when substantial portions of detailing and executive design are left to contractors (or depend on contractor shop drawings), reducing designer control."@en ;
-    skos:prefLabel "Delegation of executive/detail design to contractors"@en ;
-    du:IsOfNature du:nature_strategic ;
-    du:addressesObject du:object_contracts-procurement ;
-    du:emergesInPhase du:phase_tender-contracting ;
-    du:evidenceSource "Interview framework"@en ;
-    du:introducedBy du:stakeholder_client-owner ;
-    du:level "Instance"^^xsd:string .
-
-du:U_T20 a skos:Concept,
-        du:Uncertainty ;
-    skos:broader du:U_T07 ;
-    skos:definition "Uncertainty arising from market-driven price volatility and the time gap between estimating, procuring, and installing materials/components, which creates cost revision risk and can trigger scope/budget changes."@en ;
-    skos:prefLabel "Price volatility"@en ;
-    du:IsOfNature du:nature_aleatory ;
-    du:addressesObject du:object_supply-chain-logistics ;
-    du:emergesInPhase du:phase_tender-contracting ;
-    du:evidenceSource "Interview framework"@en ;
-    du:introducedBy du:stakeholder_market-actors ;
-    du:level "Instance"^^xsd:string ;
-    du:notes "including logistics and transport conditions"@en .
-
-du:U_T21 a skos:Concept,
-        du:Uncertainty ;
-    skos:broader du:U_T07 ;
-    skos:definition "Uncertainty arising from unforeseen systemic events, such as pandemics, wars, labor shortages, or contractor suspension, that disrupt markets and institutions, affecting workforce availability, contractor continuity, costs, and schedules."@en ;
-    skos:prefLabel "External shocks"@en ;
-    du:IsOfNature du:nature_aleatory ;
-    du:addressesObject du:object_supply-chain-logistics ;
-    du:emergesInPhase du:phase_construction-execution ;
-    du:evidenceSource "Interview framework"@en ;
-    du:introducedBy du:stakeholder_market-actors ;
-    du:level "Instance"^^xsd:string .
-
-du:U_T22 a skos:Concept,
-        du:Uncertainty ;
-    skos:broader du:U_T03 ;
-    skos:definition "Uncertainty arising from overlapping design, approval, and construction activities in parallel, where unresolved decisions propagate downstream and amplify changes, claims, and rework."@en ;
-    skos:prefLabel "Working in parallel"@en ;
-    du:IsOfNature du:nature_strategic ;
-    du:addressesObject du:object_contracts-procurement ;
-    du:emergesInPhase du:phase_tender-contracting ;
-    du:evidenceSource "Interview framework"@en ;
-    du:introducedBy du:stakeholder_client-owner ;
-    du:level "Instance"^^xsd:string .
-
-du:U_T23 a skos:Concept,
-        du:Uncertainty ;
-    skos:broader du:U_T04 ;
-    skos:definition "Uncertainty arising from missing, late, or improperly collected information during construction (e.g., existing conditions, quantities, or as-built data), limiting reliable control over execution."@en ;
-    skos:prefLabel "Missing or unreliable site and execution data"@en ;
-    du:IsOfNature du:nature_epistemic ;
-    du:addressesObject du:object_information-documentation ;
-    du:emergesInPhase du:phase_construction-execution ;
-    du:evidenceSource "Interview framework"@en ;
-    du:introducedBy du:stakeholder_contractors ;
-    du:level "Instance"^^xsd:string .
-
-du:U_T24 a skos:Concept,
-        du:Uncertainty ;
-    skos:broader du:U_T07 ;
-    skos:definition "Uncertainty arising from variability in workforce availability, experience, and skill levels on site, which affects productivity, quality, and schedule reliability."@en ;
-    skos:prefLabel "Workforce availability, skill level, and turnover"@en ;
-    du:IsOfNature du:nature_aleatory ;
-    du:addressesObject du:object_supply-chain-logistics ;
-    du:emergesInPhase du:phase_construction-execution ;
-    du:evidenceSource "Interview framework"@en ;
-    du:introducedBy du:stakeholder_market-actors ;
-    du:level "Instance"^^xsd:string ;
-    du:notes "Not really design uncertainty"@en .
-
-du:U_T25 a skos:Concept,
-        du:Uncertainty ;
-    skos:broader du:U_T04 ;
-    skos:definition "Uncertainty arising when designers lack sufficient understanding of construction methods, site constraints, and execution realities, leading to design assumptions that prove infeasible or risky during construction."@en ;
-    skos:prefLabel "Designers’ limited understanding of construction methods"@en ;
-    du:IsOfNature du:nature_epistemic ;
-    du:addressesObject du:object_design-solution-technical-definition ;
-    du:emergesInPhase du:phase_design ;
-    du:evidenceSource "Interview framework"@en ;
-    du:introducedBy du:stakeholder_designers ;
-    du:level "Instance"^^xsd:string .
-
-du:U_T26 a skos:Concept,
-        du:Uncertainty ;
-    skos:broader du:U_T04 ;
-    skos:definition "Uncertainty arising when quantitative models (e.g.  LCA, performance models) rely on input parameters that are unavailable, or highly uncertain. Including the lack of urban-scale information for reliable environmental performance predictions."@en ;
-    skos:prefLabel "Insufficient data for quantitative decision-support models"@en ;
-    du:IsOfNature du:nature_epistemic ;
-    du:addressesObject du:object_tools-models-bim-vr-sim ;
-    du:emergesInPhase du:phase_design ;
-    du:evidenceSource "Interview framework"@en ;
-    du:introducedBy du:stakeholder_designers ;
-    du:level "Instance"^^xsd:string .
-
-du:U_T27 a skos:Concept,
-        du:Uncertainty ;
-    skos:broader du:U_T01 ;
-    skos:definition "Uncertainty arising when marketing or sales teams commit to features or specifications without prior technical, regulatory, or economic validation, forcing the project team to resolve infeasible or unrealistic promises after contracts are signed."@en ;
-    skos:prefLabel "Over-committed sales specifications"@en ;
-    du:IsOfNature du:nature_strategic ;
-    du:addressesObject du:object_requirements-brief ;
-    du:emergesInPhase du:phase_initiation-feasibility ;
-    du:evidenceSource "Interview framework"@en ;
-    du:introducedBy du:stakeholder_client-owner ;
-    du:level "Instance"^^xsd:string .
-
-du:U_T28 a skos:Concept,
-        du:Uncertainty ;
-    skos:broader du:U_T04 ;
-    skos:definition "Uncertainty caused by the loss of tacit and explicit knowledge when the design and engineering team leaves after completion, leaving operations and facility management without access to critical project infotmation.  Operations and maintenance rely on outdated, incomplete, or unreliable as-built information, particularly in existing buildings with undocumented modifications over time."@en ;
-    skos:prefLabel "Knowledge loss at handover"@en ;
-    du:IsOfNature du:nature_epistemic ;
-    du:addressesObject du:object_information-documentation ;
-    du:emergesInPhase du:phase_use-fm ;
-    du:evidenceSource "Interview framework"@en ;
-    du:introducedBy du:stakeholder_client-owner ;
-    du:level "Instance"^^xsd:string .
-
-du:U_T39 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T29 ;
-    skos:definition "A mitigation instance that reduces design uncertainty by analyzing internal technical criteria (performance, cost, materials, aesthetics) during design to balance trade-offs"@en ;
-    skos:prefLabel "Trade-off Analysis"@en ;
-    du:addressesObject_m du:object_design-solution-technical-definition ;
-    du:evidenceSource "Interview framework"@en ;
-    du:notes "Most mentioned"@en ;
-    du:performedByStakeholder du:stakeholder_designers ;
-    du:performedInPhase du:phase_design ;
-    du:requiresAction du:verb_analyze .
-
-du:U_T40 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T29 ;
-    skos:definition "A mitigation instance that reduces uncertainty by relying on critical human judgment to recognize, interpret, and correct issues that automated tools may miss, rather than depending solely on technical systems"@en ;
-    skos:prefLabel "Critical human judgement"@en ;
-    du:addressesObject_m du:object_tools-models-bim-vr-sim ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_designers ;
-    du:performedInPhase du:phase_design ;
-    du:requiresAction du:verb_analyze .
-
-du:U_T41 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T30 ;
-    skos:definition "A mitigation strategy that reduces uncertainty by structurally integrating design and construction expertise through centralized leadership, early contractor involvement, and unified organizational responsibility."@en ;
-    skos:prefLabel "Integrated design coordination"@en ;
-    du:addressesObject_m du:object_team-coordination-roles ;
-    du:evidenceSource "Interview framework"@en ;
-    du:notes "Most mentioned"@en ;
-    du:performedByStakeholder du:stakeholder_client-owner ;
-    du:performedInPhase du:phase_design ;
-    du:requiresAction du:verb_coordinate .
-
-du:U_T42 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T30 ;
-    skos:definition "A mitigation strategy that reduces uncertainty by actively coordinating with clients through iterative dialogue, translation of aspirations into measurable parameters, and tailored communication to build a shared and stable brief."@en ;
-    skos:prefLabel "Structured Client & Brief Alignment"@en ;
-    du:addressesObject_m du:object_requirements-brief ;
-    du:evidenceSource "Interview framework"@en ;
-    du:notes "Most mentioned"@en ;
-    du:performedByStakeholder du:stakeholder_designers ;
-    du:performedInPhase du:phase_briefing-requirements ;
-    du:requiresAction du:verb_coordinate .
-
-du:U_T43 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T30 ;
-    skos:definition "A mitigation strategy that reduces uncertainty by coordinating multidisciplinary expertise early in feasibility stages to interpret constraints and align technical understanding before design decisions are fixed, including technical coordination between different tools."@en ;
-    skos:prefLabel "Multidisciplinary Involvement"@en ;
-    du:addressesObject_m du:object_team-coordination-roles ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_client-owner ;
-    du:performedInPhase du:phase_initiation-feasibility ;
-    du:requiresAction du:verb_coordinate .
-
-du:U_T44 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T30 ;
-    skos:definition "A mitigation strategy that reduces uncertainty during execution by formalizing communication channels and coordination roles on site, ensuring structured information flow and decision control."@en ;
-    skos:prefLabel "Communication during constrution"@en ;
-    du:addressesObject_m du:object_team-coordination-roles ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_contractors ;
-    du:performedInPhase du:phase_construction-execution ;
-    du:requiresAction du:verb_coordinate .
-
-du:U_T45 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T30 ;
-    skos:definition "A mitigation strategy that reduces uncertainty by directly involving users and stakeholders in the requirements phase to surface operational realities and avoid late-stage revisions."@en ;
-    skos:prefLabel "User involvement"@en ;
-    du:addressesObject_m du:object_users-demand ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_designers ;
-    du:performedInPhase du:phase_briefing-requirements ;
-    du:requiresAction du:verb_coordinate .
-
-du:U_T46 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T30 ;
-    skos:definition "A mitigation strategy that reduces uncertainty by formally aligning roles, responsibilities, incentives, and long-term obligations between contractual actors (e.g., developers, designers, contractors, operators)."@en ;
-    skos:prefLabel "Contractual & Responsibility Alignment"@en ;
-    du:addressesObject_m du:object_contracts-procurement ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_client-owner ;
-    du:performedInPhase du:phase_tender-contracting ;
-    du:requiresAction du:verb_coordinate .
-
-du:U_T47 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T31 ;
-    skos:definition "A mitigation instance that reduces uncertainty by explicitly defining selection criteria, contractual scope, roles, responsibilities, and performance obligations within contracting frameworks."@en ;
-    skos:prefLabel "Contractual formalization"@en ;
-    du:addressesObject_m du:object_contracts-procurement ;
-    du:evidenceSource "Interview framework"@en ;
-    du:notes "Most mentioned"@en ;
-    du:performedByStakeholder du:stakeholder_client-owner ;
-    du:performedInPhase du:phase_tender-contracting ;
-    du:requiresAction du:verb_define .
-
-du:U_T48 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T31 ;
-    skos:definition "A mitigation instance that reduces uncertainty by explicitly structuring requirements during briefing, translating constraints, sustainability criteria, and known parameters into a stable and enforceable design brief."@en ;
-    skos:prefLabel "Control through requirement structuring"@en ;
-    du:addressesObject_m du:object_requirements-brief ;
-    du:evidenceSource "Interview framework"@en ;
-    du:notes "Most mentioned"@en ;
-    du:performedByStakeholder du:stakeholder_designers ;
-    du:performedInPhase du:phase_briefing-requirements ;
-    du:requiresAction du:verb_define .
-
-du:U_T49 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T31 ;
-    skos:definition "A mitigation instance that reduces uncertainty by formalizing decision authority, defining acceptable change ranges, and explicitly quantifying uncertainty levels, thereby preventing uncontrolled ambiguity and escalation across project stages."@en ;
-    skos:prefLabel "Decision & Change Governance"@en ;
-    du:addressesObject_m du:object_decisions-governance ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_designers ;
-    du:performedInPhase du:phase_design ;
-    du:requiresAction du:verb_define .
-
-du:U_T50 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T31 ;
-    skos:definition "Reduces performance uncertainty by using sustainability certifications (e.g. LEED) as market signals that shape expectations, attract tenants, and justify performance-related investments"@en ;
-    skos:prefLabel "Set performance expectation"@en ;
-    du:addressesObject_m du:object_market-demand ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_client-owner ;
-    du:performedInPhase du:phase_design ;
-    du:requiresAction du:verb_define .
-
-du:U_T51 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T32 ;
-    skos:definition "A mitigation instance that reduces uncertainty by developing and managing structured digital design models (e.g., BIM), enabling clearer visualization, consistency across repetitive elements, traceability of information responsibility, and greater predictability of the final outcome."@en ;
-    skos:prefLabel "The use of BIM for design"@en ;
-    du:addressesObject_m du:object_tools-models-bim-vr-sim ;
-    du:evidenceSource "Interview framework"@en ;
-    du:notes "Most mentioned"@en ;
-    du:performedByStakeholder du:stakeholder_designers ;
-    du:performedInPhase du:phase_design ;
-    du:requiresAction du:verb_model .
-
-du:U_T52 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T32 ;
-    skos:definition "A mitigation instance that reduces uncertainty by using visual and immersive representations (e.g., renders, VR) to make design intent accessible to clients and non-experts, enabling informed questioning, clarification, and decision-making during briefing."@en ;
-    skos:prefLabel "Visualization for non experts (users)"@en ;
-    du:addressesObject_m du:object_tools-models-bim-vr-sim ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_designers ;
-    du:performedInPhase du:phase_briefing-requirements ;
-    du:requiresAction du:verb_model .
-
-du:U_T53 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T32 ;
-    skos:definition "A mitigation instance that reduces uncertainty during construction by using digital representations and simulations (e.g., point clouds, 4D sequencing, AR/VR site inspection) to anticipate constraints, visualize site conditions, and improve coordination before and during execution."@en ;
-    skos:prefLabel "Use Simulation and visualizations in the construction phase"@en ;
-    du:addressesObject_m du:object_tools-models-bim-vr-sim ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_contractors ;
-    du:performedInPhase du:phase_construction-execution ;
-    du:requiresAction du:verb_model .
-
-du:U_T54 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T32 ;
-    skos:definition "Mitigates uncertainty by mathematically quantifying the effects of uncertain inputs through probabilistic simulation, producing ranges and confidence intervals rather than single deterministic results"@en ;
-    skos:prefLabel "Probabalistic modeling"@en ;
-    du:evidenceSource "Interview framework"@en ;
-    du:requiresAction du:verb_model .
-
-du:U_T55 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T32 ;
-    skos:definition "A mitigation instance that reduces uncertainty by modeling financial viability and return expectations before design commitments are made."@en ;
-    skos:prefLabel "Buisness plan"@en ;
-    du:addressesObject_m du:object_market-demand ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_client-owner ;
-    du:performedInPhase du:phase_initiation-feasibility ;
-    du:requiresAction du:verb_model .
-
-du:U_T56 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T32 ;
-    skos:definition "Reduces performance uncertainty by using BIM as a long-term digital repository for facility management, enabling accurate, up-to-date knowledge of systems, components, and maintenance needs throughout the building’s operational life"@en ;
-    skos:prefLabel "FM BIM"@en ;
-    du:addressesObject_m du:object_tools-models-bim-vr-sim ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_facility-managers-operators ;
-    du:performedInPhase du:phase_use-fm ;
-    du:requiresAction du:verb_model .
-
-du:U_T57 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T33 ;
-    skos:definition "A mitigation instance that reduces uncertainty by embedding capacity for transformation, reuse, and evolution directly into spatial, technical, and material systems at the design stage, so that future change can occur without disruptive intervention."@en ;
-    skos:prefLabel "Embedded Adaptability"@en ;
-    du:addressesObject_m du:object_flexibility-reuse-circularity ;
-    du:evidenceSource "Interview framework"@en ;
-    du:notes "Most mentioned from all types!"@en ;
-    du:performedByStakeholder du:stakeholder_designers ;
-    du:performedInPhase du:phase_design ;
-    du:requiresAction du:verb_plan .
-
-du:U_T58 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T33 ;
-    skos:definition "A mitigation instance that reduces performance uncertainty by anticipating degradation, operational demands, failure risk, and lifecycle impacts, embedding maintenance logic, energy strategy, and durability considerations into long-term planning."@en ;
-    skos:prefLabel "Lifecycle & Maintenance Anticipation"@en ;
-    du:addressesObject_m du:object_design-solution-technical-definition ;
-    du:evidenceSource "Interview framework"@en ;
-    du:notes "Most mentioned"@en ;
-    du:performedByStakeholder du:stakeholder_facility-managers-operators ;
-    du:performedInPhase du:phase_use-fm ;
-    du:requiresAction du:verb_plan .
-
-du:U_T59 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T33 ;
-    skos:definition "A mitigation instance that reduces adaptability uncertainty during the use phase by enabling reversible reconfiguration, refurbishment, and layout changes without structural intervention."@en ;
-    skos:prefLabel "Enable adaptation"@en ;
-    du:addressesObject_m du:object_flexibility-reuse-circularity ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_facility-managers-operators ;
-    du:performedInPhase du:phase_use-fm ;
-    du:requiresAction du:verb_plan .
-
-du:U_T60 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T33 ;
-    skos:definition "A mitigation instance that reduces uncertainty by detailed technical resolution, ensuring robustness, and completeness of design solutions."@en ;
-    skos:prefLabel "Technical Exhaustivenes"@en ;
-    du:addressesObject_m du:object_design-solution-technical-definition ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_designers ;
-    du:performedInPhase du:phase_design ;
-    du:requiresAction du:verb_plan .
-
-du:U_T61 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T33 ;
-    skos:definition "A mitigation instance that reduces uncertainty by allocating structured time and analytical effort during early programming to clarify scope and optimize decisions before formal commitments."@en ;
-    skos:prefLabel "Early planning"@en ;
-    du:addressesObject_m du:object_requirements-brief ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_client-owner ;
-    du:performedInPhase du:phase_initiation-feasibility ;
-    du:requiresAction du:verb_plan .
-
-du:U_T62 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T33 ;
-    skos:definition "A mitigation instance that reduces uncertainty by deliberately selecting appropriate tools and workflows (e.g., CAD vs. BIM) based on project characteristics such as speed and non-standard conditions."@en ;
-    skos:prefLabel "Strategic Method & Tool Planning"@en ;
-    du:addressesObject_m du:object_tools-models-bim-vr-sim ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_designers ;
-    du:performedInPhase du:phase_design ;
-    du:requiresAction du:verb_plan .
-
-du:U_T63 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T33 ;
-    skos:definition "A mitigation instance that reduces uncertainty by proactively identifying future information needs and relevant actors early in the project lifecycle."@en ;
-    skos:prefLabel "Proactive Information collection"@en ;
-    du:addressesObject_m du:object_information-documentation ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_designers ;
-    du:performedInPhase du:phase_initiation-feasibility ;
-    du:requiresAction du:verb_plan .
-
-du:U_T64 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T33 ;
-    skos:definition "A mitigation instance that reduces construction uncertainty by planning sourcing, transport timing, and logistics to stabilize cost and schedule risks."@en ;
-    skos:prefLabel "Supply chain planning"@en ;
-    du:addressesObject_m du:object_supply-chain-logistics ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_contractors ;
-    du:performedInPhase du:phase_construction-execution ;
-    du:requiresAction du:verb_plan .
-
-du:U_T65 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T34 ;
-    skos:definition "A mitigation instance that reduces uncertainty by limiting experimentation in technical and constructive choices, relying on consolidated solutions and selectively allowing innovation only within controlled boundaries."@en ;
-    skos:prefLabel "Relying on well established methods"@en ;
-    du:addressesObject_m du:object_design-solution-technical-definition ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_designers ;
-    du:performedInPhase du:phase_design ;
-    du:requiresAction du:verb_standardize .
-
-du:U_T66 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T34 ;
-    skos:definition "A mitigation instance that reduces uncertainty by structuring documentation, workflows, and organizational processes into replicable, predictable, and transparent frameworks that guide project development over time."@en ;
-    skos:prefLabel "Process Standardization"@en ;
-    du:addressesObject_m du:object_team-coordination-roles ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_client-owner ;
-    du:performedInPhase du:phase_initiation-feasibility ;
-    du:requiresAction du:verb_standardize .
-
-du:U_T67 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T35 ;
-    skos:definition "A mitigation instance that reduces uncertainty by capturing, updating, and reusing institutional knowledge, regulatory learning, project experience, and performance records over time to support future decision-making and actor selection."@en ;
-    skos:prefLabel "Keep Organizational Knowledge"@en ;
-    du:addressesObject_m du:object_information-documentation ;
-    du:evidenceSource "Interview framework"@en ;
-    du:notes "Most mentioned"@en ;
-    du:performedByStakeholder du:stakeholder_client-owner ;
-    du:performedInPhase du:phase_post-project-organizational ;
-    du:requiresAction du:verb_track .
-
-du:U_T68 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T35 ;
-    skos:definition "A mitigation instance that reduces uncertainty by progressively collecting, structuring, and validating baseline documentation and contextual knowledge starting from early project phases to avoid informational gaps later."@en ;
-    skos:prefLabel "Information documentation"@en ;
-    du:addressesObject_m du:object_information-documentation ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_designers ;
-    du:performedInPhase du:phase_initiation-feasibility ;
-    du:requiresAction du:verb_track .
-
-du:U_T69 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T35 ;
-    skos:definition "A mitigation instance that reduces uncertainty by systematically recording, tracking, and evaluating reusable furniture and components, enabling informed decisions about reuse, adaptation, or replacement during design and refurbishment"@en ;
-    skos:prefLabel "Organizational Asset Tracking for Reuse"@en ;
-    du:addressesObject_m du:object_information-documentation ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_client-owner ;
-    du:performedInPhase du:phase_use-fm ;
-    du:requiresAction du:verb_track .
-
-du:U_T70 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T35 ;
-    skos:definition "A mitigation instance that reduces uncertainty by providing standardized, structured lifecycle information (e.g., Digital Product Passports) about materials and components, supporting circular design and end-of-life decision-making."@en ;
-    skos:prefLabel "Standardized Lifecycle Information Systems"@en ;
-    du:addressesObject_m du:object_information-documentation ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_client-owner ;
-    du:performedInPhase du:phase_use-fm ;
-    du:requiresAction du:verb_track .
-
-du:U_T71 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T35 ;
-    skos:definition "A mitigation instance that reduces uncertainty by maintaining a traceable digital record of design evolution and changes (e.g., via BIM), ensuring continuity and clarity during handovers across actors and phases."@en ;
-    skos:prefLabel "Design Traceability via Digital Models"@en ;
-    du:addressesObject_m du:object_tools-models-bim-vr-sim ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_designers ;
-    du:performedInPhase du:phase_design ;
-    du:requiresAction du:verb_track .
-
-du:U_T72 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T35 ;
-    skos:definition "A mitigation instance that reduces uncertainty by systematically monitoring and documenting construction progress, approvals, and open issues through structured reporting and supervision mechanisms."@en ;
-    skos:prefLabel "Construction Progress Tracking"@en ;
-    du:addressesObject_m du:object_information-documentation ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_contractors ;
-    du:performedInPhase du:phase_construction-execution ;
-    du:requiresAction du:verb_track .
-
-du:U_T73 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T36 ;
-    skos:definition "A mitigation instance that reduces uncertainty by verifying the competence, qualifications, and organizational capability of contractors and design teams before engagement or tender award."@en ;
-    skos:prefLabel "Partner Qualification"@en ;
-    du:addressesObject_m du:object_contracts-procurement ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_client-owner ;
-    du:performedInPhase du:phase_tender-contracting ;
-    du:requiresAction du:verb_verify .
-
-du:U_T74 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T36 ;
-    skos:definition "A mitigation instance that reduces uncertainty by systematically verifying that design outputs comply with agreed requirements, specifications, and regulatory frameworks before tendering or execution, preventing deviations and late compliance-related surprises."@en ;
-    skos:prefLabel "Compliance Checking"@en ;
-    du:addressesObject_m du:object_requirements-brief ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_designers ;
-    du:performedInPhase du:phase_design ;
-    du:requiresAction du:verb_verify .
-
-du:U_T75 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T36 ;
-    skos:definition "A mitigation instance that reduces uncertainty by verifying actual spatial or operational performance in use and adjusting assumptions or requirements accordingly."@en ;
-    skos:prefLabel "Performance-in-Use Validation"@en ;
-    du:addressesObject_m du:object_users-demand ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_designers ;
-    du:performedInPhase du:phase_design ;
-    du:requiresAction du:verb_verify .
-
-du:U_T76 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T37 ;
-    skos:definition "A mitigation instance that reduces uncertainty by verifying execution quality against detailed technical drawings and approved samples to ensure fidelity between design intent and built outcome."@en ;
-    skos:prefLabel "Technical quality control"@en ;
-    du:addressesObject_m du:object_design-solution-technical-definition ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_contractors ;
-    du:performedInPhase du:phase_construction-execution ;
-    du:requiresAction du:verb_verify .
-
-du:U_T77 a skos:Concept,
-        du:Mitigation ;
-    skos:broader du:U_T38 ;
-    skos:definition "A mitigation instance that reduces uncertainty by verifying maintenance actions for feasibility, durability, and interference with design intent before implementation."@en ;
-    skos:prefLabel "Maintenance plan"@en ;
-    du:addressesObject_m du:object_design-solution-technical-definition ;
-    du:evidenceSource "Interview framework"@en ;
-    du:performedByStakeholder du:stakeholder_facility-managers-operators ;
-    du:performedInPhase du:phase_use-fm ;
-    du:requiresAction du:verb_verify .
 
 du:addressesObject a rdf:Property ;
     rdfs:label "addresses object"@en ;
@@ -784,23 +101,978 @@ du:requiresAction a rdf:Property ;
     rdfs:domain du:Mitigation ;
     rdfs:range du:ActionVerb .
 
-du:U_T02 a skos:Concept,
+du:U_T09 a skos:Concept,
         du:Uncertainty ;
-    skos:definition "Uncertainty related to a building’s ability to accommodate future changes or adapt to evolving needs, technologies, or external conditions over time."@en ;
-    skos:prefLabel "Flexibility and adaptability uncertainty"@en ;
+    skos:broader du:U_T06 ;
+    skos:definition "Uncertainty about the timing and conditions of permits, including late or changing authority demands.",
+        "Uncertainty about the timing and conditions of permits, including late or changing authority demands."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Permitting timeline unpredictability",
+        "Permitting timeline unpredictability"@en ;
+    du:IsOfNature du:nature_epistemic,
+        du:nature_strategic ;
+    du:addressesObject du:object_regulations ;
+    du:emergesInPhase du:phase_initiation-feasibility ;
+    du:introducedBy du:stakeholder_regulators-authorities ;
+    du:level "Instance"^^xsd:string ;
+    du:notes "Most mentioned"@en .
+
+du:U_T10 a skos:Concept,
+        du:Uncertainty ;
+    skos:broader du:U_T01 ;
+    skos:definition "Uncertainty arising when users/clients cannot clearly articulate needs, or from insufficient baseline data about users, demand, and context (e.g., behaviors, needs, projections), reducing confidence in requirement-setting and making the brief incomplete and unstable.",
+        "Uncertainty arising when users/clients cannot clearly articulate needs, or from insufficient baseline data about users, demand, and context (e.g., behaviors, needs, projections), reducing confidence in requirement-setting and making the brief incomplete and unstable."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Unclear project objective and needs",
+        "Unclear project objective and needs"@en ;
+    du:IsOfNature du:nature_epistemic ;
+    du:addressesObject du:object_requirements-brief ;
+    du:emergesInPhase du:phase_briefing-requirements ;
+    du:evidenceSource "Interview framework"@en ;
+    du:introducedBy du:stakeholder_client-owner ;
+    du:level "Instance"^^xsd:string ;
+    du:notes "Most mentioned"@en .
+
+du:U_T11 a skos:Concept,
+        du:Uncertainty ;
+    skos:broader du:U_T01 ;
+    skos:definition "Uncertainty arising when client decisions change unpredictably over time, sometimes because of misunderstood approved designs or requirements, leading to late corrections and change requests.",
+        "Uncertainty arising when client decisions change unpredictably over time, sometimes because of misunderstood approved designs or requirements, leading to late corrections and change requests."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Client decision instability",
+        "Client decision instability"@en ;
+    du:IsOfNature du:nature_epistemic,
+        du:nature_strategic ;
+    du:addressesObject du:object_decisions-governance ;
+    du:emergesInPhase du:phase_design ;
+    du:evidenceSource "Interview framework"@en ;
+    du:introducedBy du:stakeholder_client-owner ;
+    du:level "Instance"^^xsd:string .
+
+du:U_T12 a skos:Concept,
+        du:Uncertainty ;
+    skos:broader du:U_T01 ;
+    skos:definition "Uncertainty arising when a developer/brand defines requirements on behalf of an unknown or absent end user, and later end-user involvement triggers significant requirement changes.",
+        "Uncertainty arising when a developer/brand defines requirements on behalf of an unknown or absent end user, and later end-user involvement triggers significant requirement changes."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Missrepresented end user",
+        "Missrepresented end user"@en ;
+    du:IsOfNature du:nature_epistemic ;
+    du:addressesObject du:object_requirements-brief ;
+    du:emergesInPhase du:phase_briefing-requirements ;
+    du:evidenceSource "Interview framework"@en ;
+    du:introducedBy du:stakeholder_client-owner ;
+    du:level "Instance"^^xsd:string .
+
+du:U_T13 a skos:Concept,
+        du:Uncertainty ;
+    skos:broader du:U_T07 ;
+    skos:definition "Uncertainty arising from shifting market conditions (demand, expectations, price volatility, sector trends) that force changes in targets, specifications.",
+        "Uncertainty arising from shifting market conditions (demand, expectations, price volatility, sector trends) that force changes in targets, specifications."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Market volatility",
+        "Market volatility"@en ;
+    du:IsOfNature du:nature_aleatory ;
+    du:addressesObject du:object_market-demand ;
+    du:emergesInPhase du:phase_initiation-feasibility ;
+    du:evidenceSource "Interview framework"@en ;
+    du:introducedBy du:stakeholder_market-actors ;
+    du:level "Instance"^^xsd:string .
+
+du:U_T14 a skos:Concept,
+        du:Uncertainty ;
+    skos:broader du:U_T03 ;
+    skos:definition "Uncertainty arising from the non-repeatable nature of design work, where requirements cannot be deterministically mapped to solutions and must be continuously interpreted and negotiated during the process, especially with the client.",
+        "Uncertainty arising from the non-repeatable nature of design work, where requirements cannot be deterministically mapped to solutions and must be continuously interpreted and negotiated during the process, especially with the client."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Project uniqueness",
+        "Project uniqueness"@en ;
+    du:IsOfNature du:nature_epistemic ;
+    du:addressesObject du:object_design-solution-technical-definition ;
+    du:emergesInPhase du:phase_design ;
+    du:evidenceSource "Interview framework"@en ;
+    du:introducedBy du:stakeholder_designers ;
+    du:level "Instance"^^xsd:string .
+
+du:U_T15 a skos:Concept,
+        du:Uncertainty ;
+    skos:broader du:U_T02 ;
+    skos:definition "Uncertainty arising from the inability to predict how building uses, functional requirements, and technologies will evolve over the long operational life of the building, which affects early decisions on systems zoning, service distribution, and maintainability.",
+        "Uncertainty arising from the inability to predict how building uses, functional requirements, and technologies will evolve over the long operational life of the building, which affects early decisions on systems zoning, service distribution, and maintainability."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Uncertain future needs and uses",
+        "Uncertain future needs and uses"@en ;
+    du:IsOfNature du:nature_aleatory ;
+    du:addressesObject du:object_flexibility-reuse-circularity ;
+    du:emergesInPhase du:phase_design ;
+    du:evidenceSource "Interview framework"@en ;
+    du:introducedBy du:stakeholder_end-users ;
+    du:level "Instance"^^xsd:string .
+
+du:U_T16 a skos:Concept,
+        du:Uncertainty ;
+    skos:broader du:U_T03 ;
+    skos:definition "Uncertainty arising when design leadership, coordination, and multidisciplinary integration are insufficient",
+        "Uncertainty arising when design leadership, coordination, and multidisciplinary integration are insufficient"@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Weak design management and design coordination",
+        "Weak design management and design coordination"@en ;
+    du:IsOfNature du:nature_strategic ;
+    du:addressesObject du:object_team-coordination-roles ;
+    du:emergesInPhase du:phase_design ;
+    du:evidenceSource "Interview framework"@en ;
+    du:introducedBy du:stakeholder_designers ;
+    du:level "Instance"^^xsd:string ;
+    du:notes "Most mentioned"@en .
+
+du:U_T17 a skos:Concept,
+        du:Uncertainty ;
+    skos:broader du:U_T03 ;
+    skos:definition "Uncertainty arising from design outputs that are incomplete, under-specified, or not executable at tender time, which shifts unresolved decisions into execution.",
+        "Uncertainty arising from design outputs that are incomplete, under-specified, or not executable at tender time, which shifts unresolved decisions into execution."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Low quality / incomplete design deliverables at tender",
+        "Low quality / incomplete design deliverables at tender"@en ;
+    du:IsOfNature du:nature_epistemic ;
+    du:addressesObject du:object_information-documentation ;
+    du:emergesInPhase du:phase_design ;
+    du:evidenceSource "Interview framework"@en ;
+    du:introducedBy du:stakeholder_designers ;
+    du:level "Instance"^^xsd:string ;
+    du:notes "Most mentioned"@en .
+
+du:U_T18 a skos:Concept,
+        du:Uncertainty ;
+    skos:broader du:U_T03 ;
+    skos:definition "Uncertainty arising from iterative “ping-pong” negotiation between disciplines, requiring compromises between the vision and whether it is technically/contractually feasible.",
+        "Uncertainty arising from iterative “ping-pong” negotiation between disciplines, requiring compromises between the vision and whether it is technically/contractually feasible."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Interactive design process",
+        "Interactive design process"@en ;
+    du:IsOfNature du:nature_epistemic ;
+    du:addressesObject du:object_design-solution-technical-definition ;
+    du:emergesInPhase du:phase_design ;
+    du:evidenceSource "Interview framework"@en ;
+    du:introducedBy du:stakeholder_designers ;
+    du:level "Instance"^^xsd:string .
+
+du:U_T19 a skos:Concept,
+        du:Uncertainty ;
+    skos:broader du:U_T03 ;
+    skos:definition "Uncertainty arising when substantial portions of detailing and executive design are left to contractors (or depend on contractor shop drawings), reducing designer control.",
+        "Uncertainty arising when substantial portions of detailing and executive design are left to contractors (or depend on contractor shop drawings), reducing designer control."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Delegation of executive/detail design to contractors",
+        "Delegation of executive/detail design to contractors"@en ;
+    du:IsOfNature du:nature_strategic ;
+    du:addressesObject du:object_contracts-procurement ;
+    du:emergesInPhase du:phase_tender-contracting ;
+    du:evidenceSource "Interview framework"@en ;
+    du:introducedBy du:stakeholder_client-owner ;
+    du:level "Instance"^^xsd:string .
+
+du:U_T20 a skos:Concept,
+        du:Uncertainty ;
+    skos:broader du:U_T07 ;
+    skos:definition "Uncertainty arising from market-driven price volatility and the time gap between estimating, procuring, and installing materials/components, which creates cost revision risk and can trigger scope/budget changes.",
+        "Uncertainty arising from market-driven price volatility and the time gap between estimating, procuring, and installing materials/components, which creates cost revision risk and can trigger scope/budget changes."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Price volatility",
+        "Price volatility"@en ;
+    du:IsOfNature du:nature_aleatory ;
+    du:addressesObject du:object_supply-chain-logistics ;
+    du:emergesInPhase du:phase_tender-contracting ;
+    du:evidenceSource "Interview framework"@en ;
+    du:introducedBy du:stakeholder_market-actors ;
+    du:level "Instance"^^xsd:string ;
+    du:notes "including logistics and transport conditions"@en .
+
+du:U_T21 a skos:Concept,
+        du:Uncertainty ;
+    skos:broader du:U_T07 ;
+    skos:definition "Uncertainty arising from unforeseen systemic events, such as pandemics, wars, labor shortages, or contractor suspension, that disrupt markets and institutions, affecting workforce availability, contractor continuity, costs, and schedules.",
+        "Uncertainty arising from unforeseen systemic events, such as pandemics, wars, labor shortages, or contractor suspension, that disrupt markets and institutions, affecting workforce availability, contractor continuity, costs, and schedules."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "External shocks",
+        "External shocks"@en ;
+    du:IsOfNature du:nature_aleatory ;
+    du:addressesObject du:object_supply-chain-logistics ;
+    du:emergesInPhase du:phase_construction-execution ;
+    du:evidenceSource "Interview framework"@en ;
+    du:introducedBy du:stakeholder_market-actors ;
+    du:level "Instance"^^xsd:string .
+
+du:U_T22 a skos:Concept,
+        du:Uncertainty ;
+    skos:broader du:U_T03 ;
+    skos:definition "Uncertainty arising from overlapping design, approval, and construction activities in parallel, where unresolved decisions propagate downstream and amplify changes, claims, and rework.",
+        "Uncertainty arising from overlapping design, approval, and construction activities in parallel, where unresolved decisions propagate downstream and amplify changes, claims, and rework."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Working in parallel",
+        "Working in parallel"@en ;
+    du:IsOfNature du:nature_strategic ;
+    du:addressesObject du:object_contracts-procurement ;
+    du:emergesInPhase du:phase_tender-contracting ;
+    du:evidenceSource "Interview framework"@en ;
+    du:introducedBy du:stakeholder_client-owner ;
+    du:level "Instance"^^xsd:string .
+
+du:U_T23 a skos:Concept,
+        du:Uncertainty ;
+    skos:broader du:U_T04 ;
+    skos:definition "Uncertainty arising from missing, late, or improperly collected information during construction (e.g., existing conditions, quantities, or as-built data), limiting reliable control over execution.",
+        "Uncertainty arising from missing, late, or improperly collected information during construction (e.g., existing conditions, quantities, or as-built data), limiting reliable control over execution."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Missing or unreliable site and execution data",
+        "Missing or unreliable site and execution data"@en ;
+    du:IsOfNature du:nature_epistemic ;
+    du:addressesObject du:object_information-documentation ;
+    du:emergesInPhase du:phase_construction-execution ;
+    du:evidenceSource "Interview framework"@en ;
+    du:introducedBy du:stakeholder_contractors ;
+    du:level "Instance"^^xsd:string .
+
+du:U_T24 a skos:Concept,
+        du:Uncertainty ;
+    skos:broader du:U_T07 ;
+    skos:definition "Uncertainty arising from variability in workforce availability, experience, and skill levels on site, which affects productivity, quality, and schedule reliability.",
+        "Uncertainty arising from variability in workforce availability, experience, and skill levels on site, which affects productivity, quality, and schedule reliability."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Workforce availability, skill level, and turnover",
+        "Workforce availability, skill level, and turnover"@en ;
+    du:IsOfNature du:nature_aleatory ;
+    du:addressesObject du:object_supply-chain-logistics ;
+    du:emergesInPhase du:phase_construction-execution ;
+    du:evidenceSource "Interview framework"@en ;
+    du:introducedBy du:stakeholder_market-actors ;
+    du:level "Instance"^^xsd:string ;
+    du:notes "Not really design uncertainty"@en .
+
+du:U_T25 a skos:Concept,
+        du:Uncertainty ;
+    skos:broader du:U_T04 ;
+    skos:definition "Uncertainty arising when designers lack sufficient understanding of construction methods, site constraints, and execution realities, leading to design assumptions that prove infeasible or risky during construction.",
+        "Uncertainty arising when designers lack sufficient understanding of construction methods, site constraints, and execution realities, leading to design assumptions that prove infeasible or risky during construction."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Designers’ limited understanding of construction methods",
+        "Designers’ limited understanding of construction methods"@en ;
+    du:IsOfNature du:nature_epistemic ;
+    du:addressesObject du:object_design-solution-technical-definition ;
+    du:emergesInPhase du:phase_design ;
+    du:evidenceSource "Interview framework"@en ;
+    du:introducedBy du:stakeholder_designers ;
+    du:level "Instance"^^xsd:string .
+
+du:U_T26 a skos:Concept,
+        du:Uncertainty ;
+    skos:broader du:U_T04 ;
+    skos:definition "Uncertainty arising when quantitative models (e.g. LCA, performance models) rely on input parameters that are unavailable, or highly uncertain. Including the lack of urban-scale information for reliable environmental performance predictions.",
+        "Uncertainty arising when quantitative models (e.g.  LCA, performance models) rely on input parameters that are unavailable, or highly uncertain. Including the lack of urban-scale information for reliable environmental performance predictions."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Insufficient data for quantitative decision-support models",
+        "Insufficient data for quantitative decision-support models"@en ;
+    du:IsOfNature du:nature_epistemic ;
+    du:addressesObject du:object_tools-models-bim-vr-sim ;
+    du:emergesInPhase du:phase_design ;
+    du:evidenceSource "Interview framework"@en ;
+    du:introducedBy du:stakeholder_designers ;
+    du:level "Instance"^^xsd:string .
+
+du:U_T27 a skos:Concept,
+        du:Uncertainty ;
+    skos:broader du:U_T01 ;
+    skos:definition "Uncertainty arising when marketing or sales teams commit to features or specifications without prior technical, regulatory, or economic validation, forcing the project team to resolve infeasible or unrealistic promises after contracts are signed.",
+        "Uncertainty arising when marketing or sales teams commit to features or specifications without prior technical, regulatory, or economic validation, forcing the project team to resolve infeasible or unrealistic promises after contracts are signed."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Over-committed sales specifications",
+        "Over-committed sales specifications"@en ;
+    du:IsOfNature du:nature_strategic ;
+    du:addressesObject du:object_requirements-brief ;
+    du:emergesInPhase du:phase_initiation-feasibility ;
+    du:evidenceSource "Interview framework"@en ;
+    du:introducedBy du:stakeholder_client-owner ;
+    du:level "Instance"^^xsd:string .
+
+du:U_T28 a skos:Concept,
+        du:Uncertainty ;
+    skos:broader du:U_T04 ;
+    skos:definition "Uncertainty caused by the loss of tacit and explicit knowledge when the design and engineering team leaves after completion, leaving operations and facility management without access to critical project infotmation. Operations and maintenance rely on outdated, incomplete, or unreliable as-built information, particularly in existing buildings with undocumented modifications over time.",
+        "Uncertainty caused by the loss of tacit and explicit knowledge when the design and engineering team leaves after completion, leaving operations and facility management without access to critical project infotmation.  Operations and maintenance rely on outdated, incomplete, or unreliable as-built information, particularly in existing buildings with undocumented modifications over time."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Knowledge loss at handover",
+        "Knowledge loss at handover"@en ;
+    du:IsOfNature du:nature_epistemic ;
+    du:addressesObject du:object_information-documentation ;
+    du:emergesInPhase du:phase_use-fm ;
+    du:evidenceSource "Interview framework"@en ;
+    du:introducedBy du:stakeholder_client-owner ;
+    du:level "Instance"^^xsd:string .
+
+du:U_T39 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T29 ;
+    skos:definition "A mitigation instance that reduces design uncertainty by analyzing internal technical criteria (performance, cost, materials, aesthetics) during design to balance trade-offs",
+        "A mitigation instance that reduces design uncertainty by analyzing internal technical criteria (performance, cost, materials, aesthetics) during design to balance trade-offs"@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Trade-off Analysis",
+        "Trade-off Analysis"@en ;
+    du:addressesObject_m du:object_design-solution-technical-definition ;
+    du:evidenceSource "Interview framework"@en ;
+    du:notes "Most mentioned"@en ;
+    du:performedByStakeholder du:stakeholder_designers ;
+    du:performedInPhase du:phase_design ;
+    du:requiresAction du:verb_analyze .
+
+du:U_T40 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T29 ;
+    skos:definition "A mitigation instance that reduces uncertainty by relying on critical human judgment to recognize, interpret, and correct issues that automated tools may miss, rather than depending solely on technical systems",
+        "A mitigation instance that reduces uncertainty by relying on critical human judgment to recognize, interpret, and correct issues that automated tools may miss, rather than depending solely on technical systems"@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Critical human judgement",
+        "Critical human judgement"@en ;
+    du:addressesObject_m du:object_tools-models-bim-vr-sim ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_designers ;
+    du:performedInPhase du:phase_design ;
+    du:requiresAction du:verb_analyze .
+
+du:U_T41 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T30 ;
+    skos:definition "A mitigation strategy that reduces uncertainty by structurally integrating design and construction expertise through centralized leadership, early contractor involvement, and unified organizational responsibility.",
+        "A mitigation strategy that reduces uncertainty by structurally integrating design and construction expertise through centralized leadership, early contractor involvement, and unified organizational responsibility."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Integrated design coordination",
+        "Integrated design coordination"@en ;
+    du:addressesObject_m du:object_team-coordination-roles ;
+    du:evidenceSource "Interview framework"@en ;
+    du:notes "Most mentioned"@en ;
+    du:performedByStakeholder du:stakeholder_client-owner ;
+    du:performedInPhase du:phase_design ;
+    du:requiresAction du:verb_coordinate .
+
+du:U_T42 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T30 ;
+    skos:definition "A mitigation strategy that reduces uncertainty by actively coordinating with clients through iterative dialogue, translation of aspirations into measurable parameters, and tailored communication to build a shared and stable brief.",
+        "A mitigation strategy that reduces uncertainty by actively coordinating with clients through iterative dialogue, translation of aspirations into measurable parameters, and tailored communication to build a shared and stable brief."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Structured Client & Brief Alignment",
+        "Structured Client & Brief Alignment"@en ;
+    du:addressesObject_m du:object_requirements-brief ;
+    du:evidenceSource "Interview framework"@en ;
+    du:notes "Most mentioned"@en ;
+    du:performedByStakeholder du:stakeholder_designers ;
+    du:performedInPhase du:phase_briefing-requirements ;
+    du:requiresAction du:verb_coordinate .
+
+du:U_T43 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T30 ;
+    skos:definition "A mitigation strategy that reduces uncertainty by coordinating multidisciplinary expertise early in feasibility stages to interpret constraints and align technical understanding before design decisions are fixed, including technical coordination between different tools.",
+        "A mitigation strategy that reduces uncertainty by coordinating multidisciplinary expertise early in feasibility stages to interpret constraints and align technical understanding before design decisions are fixed, including technical coordination between different tools."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Multidisciplinary Involvement",
+        "Multidisciplinary Involvement"@en ;
+    du:addressesObject_m du:object_team-coordination-roles ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_client-owner ;
+    du:performedInPhase du:phase_initiation-feasibility ;
+    du:requiresAction du:verb_coordinate .
+
+du:U_T44 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T30 ;
+    skos:definition "A mitigation strategy that reduces uncertainty during execution by formalizing communication channels and coordination roles on site, ensuring structured information flow and decision control.",
+        "A mitigation strategy that reduces uncertainty during execution by formalizing communication channels and coordination roles on site, ensuring structured information flow and decision control."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Communication during constrution",
+        "Communication during constrution"@en ;
+    du:addressesObject_m du:object_team-coordination-roles ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_contractors ;
+    du:performedInPhase du:phase_construction-execution ;
+    du:requiresAction du:verb_coordinate .
+
+du:U_T45 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T30 ;
+    skos:definition "A mitigation strategy that reduces uncertainty by directly involving users and stakeholders in the requirements phase to surface operational realities and avoid late-stage revisions.",
+        "A mitigation strategy that reduces uncertainty by directly involving users and stakeholders in the requirements phase to surface operational realities and avoid late-stage revisions."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "User involvement",
+        "User involvement"@en ;
+    du:addressesObject_m du:object_users-demand ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_designers ;
+    du:performedInPhase du:phase_briefing-requirements ;
+    du:requiresAction du:verb_coordinate .
+
+du:U_T46 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T30 ;
+    skos:definition "A mitigation strategy that reduces uncertainty by formally aligning roles, responsibilities, incentives, and long-term obligations between contractual actors (e.g., developers, designers, contractors, operators).",
+        "A mitigation strategy that reduces uncertainty by formally aligning roles, responsibilities, incentives, and long-term obligations between contractual actors (e.g., developers, designers, contractors, operators)."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Contractual & Responsibility Alignment",
+        "Contractual & Responsibility Alignment"@en ;
+    du:addressesObject_m du:object_contracts-procurement ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_client-owner ;
+    du:performedInPhase du:phase_tender-contracting ;
+    du:requiresAction du:verb_coordinate .
+
+du:U_T47 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T31 ;
+    skos:definition "A mitigation instance that reduces uncertainty by explicitly defining selection criteria, contractual scope, roles, responsibilities, and performance obligations within contracting frameworks.",
+        "A mitigation instance that reduces uncertainty by explicitly defining selection criteria, contractual scope, roles, responsibilities, and performance obligations within contracting frameworks."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Contractual formalization",
+        "Contractual formalization"@en ;
+    du:addressesObject_m du:object_contracts-procurement ;
+    du:evidenceSource "Interview framework"@en ;
+    du:notes "Most mentioned"@en ;
+    du:performedByStakeholder du:stakeholder_client-owner ;
+    du:performedInPhase du:phase_tender-contracting ;
+    du:requiresAction du:verb_define .
+
+du:U_T48 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T31 ;
+    skos:definition "A mitigation instance that reduces uncertainty by explicitly structuring requirements during briefing, translating constraints, sustainability criteria, and known parameters into a stable and enforceable design brief.",
+        "A mitigation instance that reduces uncertainty by explicitly structuring requirements during briefing, translating constraints, sustainability criteria, and known parameters into a stable and enforceable design brief."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Control through requirement structuring",
+        "Control through requirement structuring"@en ;
+    du:addressesObject_m du:object_requirements-brief ;
+    du:evidenceSource "Interview framework"@en ;
+    du:notes "Most mentioned"@en ;
+    du:performedByStakeholder du:stakeholder_designers ;
+    du:performedInPhase du:phase_briefing-requirements ;
+    du:requiresAction du:verb_define .
+
+du:U_T49 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T31 ;
+    skos:definition "A mitigation instance that reduces uncertainty by formalizing decision authority, defining acceptable change ranges, and explicitly quantifying uncertainty levels, thereby preventing uncontrolled ambiguity and escalation across project stages.",
+        "A mitigation instance that reduces uncertainty by formalizing decision authority, defining acceptable change ranges, and explicitly quantifying uncertainty levels, thereby preventing uncontrolled ambiguity and escalation across project stages."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Decision & Change Governance",
+        "Decision & Change Governance"@en ;
+    du:addressesObject_m du:object_decisions-governance ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_designers ;
+    du:performedInPhase du:phase_design ;
+    du:requiresAction du:verb_define .
+
+du:U_T50 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T31 ;
+    skos:definition "Reduces performance uncertainty by using sustainability certifications (e.g. LEED) as market signals that shape expectations, attract tenants, and justify performance-related investments",
+        "Reduces performance uncertainty by using sustainability certifications (e.g. LEED) as market signals that shape expectations, attract tenants, and justify performance-related investments"@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Set performance expectation",
+        "Set performance expectation"@en ;
+    du:addressesObject_m du:object_market-demand ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_client-owner ;
+    du:performedInPhase du:phase_design ;
+    du:requiresAction du:verb_define .
+
+du:U_T51 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T32 ;
+    skos:definition "A mitigation instance that reduces uncertainty by developing and managing structured digital design models (e.g., BIM), enabling clearer visualization, consistency across repetitive elements, traceability of information responsibility, and greater predictability of the final outcome.",
+        "A mitigation instance that reduces uncertainty by developing and managing structured digital design models (e.g., BIM), enabling clearer visualization, consistency across repetitive elements, traceability of information responsibility, and greater predictability of the final outcome."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "The use of BIM for design",
+        "The use of BIM for design"@en ;
+    du:addressesObject_m du:object_tools-models-bim-vr-sim ;
+    du:evidenceSource "Interview framework"@en ;
+    du:notes "Most mentioned"@en ;
+    du:performedByStakeholder du:stakeholder_designers ;
+    du:performedInPhase du:phase_design ;
+    du:requiresAction du:verb_model .
+
+du:U_T52 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T32 ;
+    skos:definition "A mitigation instance that reduces uncertainty by using visual and immersive representations (e.g., renders, VR) to make design intent accessible to clients and non-experts, enabling informed questioning, clarification, and decision-making during briefing.",
+        "A mitigation instance that reduces uncertainty by using visual and immersive representations (e.g., renders, VR) to make design intent accessible to clients and non-experts, enabling informed questioning, clarification, and decision-making during briefing."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Visualization for non experts (users)",
+        "Visualization for non experts (users)"@en ;
+    du:addressesObject_m du:object_tools-models-bim-vr-sim ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_designers ;
+    du:performedInPhase du:phase_briefing-requirements ;
+    du:requiresAction du:verb_model .
+
+du:U_T53 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T32 ;
+    skos:definition "A mitigation instance that reduces uncertainty during construction by using digital representations and simulations (e.g., point clouds, 4D sequencing, AR/VR site inspection) to anticipate constraints, visualize site conditions, and improve coordination before and during execution.",
+        "A mitigation instance that reduces uncertainty during construction by using digital representations and simulations (e.g., point clouds, 4D sequencing, AR/VR site inspection) to anticipate constraints, visualize site conditions, and improve coordination before and during execution."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Use Simulation and visualizations in the construction phase",
+        "Use Simulation and visualizations in the construction phase"@en ;
+    du:addressesObject_m du:object_tools-models-bim-vr-sim ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_contractors ;
+    du:performedInPhase du:phase_construction-execution ;
+    du:requiresAction du:verb_model .
+
+du:U_T54 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T32 ;
+    skos:definition "Mitigates uncertainty by mathematically quantifying the effects of uncertain inputs through probabilistic simulation, producing ranges and confidence intervals rather than single deterministic results",
+        "Mitigates uncertainty by mathematically quantifying the effects of uncertain inputs through probabilistic simulation, producing ranges and confidence intervals rather than single deterministic results"@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Probabalistic modeling",
+        "Probabalistic modeling"@en ;
+    du:evidenceSource "Interview framework"@en ;
+    du:requiresAction du:verb_model .
+
+du:U_T55 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T32 ;
+    skos:definition "A mitigation instance that reduces uncertainty by modeling financial viability and return expectations before design commitments are made.",
+        "A mitigation instance that reduces uncertainty by modeling financial viability and return expectations before design commitments are made."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Buisness plan",
+        "Buisness plan"@en ;
+    du:addressesObject_m du:object_market-demand ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_client-owner ;
+    du:performedInPhase du:phase_initiation-feasibility ;
+    du:requiresAction du:verb_model .
+
+du:U_T56 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T32 ;
+    skos:definition "Reduces performance uncertainty by using BIM as a long-term digital repository for facility management, enabling accurate, up-to-date knowledge of systems, components, and maintenance needs throughout the building’s operational life",
+        "Reduces performance uncertainty by using BIM as a long-term digital repository for facility management, enabling accurate, up-to-date knowledge of systems, components, and maintenance needs throughout the building’s operational life"@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "FM BIM",
+        "FM BIM"@en ;
+    du:addressesObject_m du:object_tools-models-bim-vr-sim ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_facility-managers-operators ;
+    du:performedInPhase du:phase_use-fm ;
+    du:requiresAction du:verb_model .
+
+du:U_T57 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T33 ;
+    skos:definition "A mitigation instance that reduces uncertainty by embedding capacity for transformation, reuse, and evolution directly into spatial, technical, and material systems at the design stage, so that future change can occur without disruptive intervention.",
+        "A mitigation instance that reduces uncertainty by embedding capacity for transformation, reuse, and evolution directly into spatial, technical, and material systems at the design stage, so that future change can occur without disruptive intervention."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Embedded Adaptability",
+        "Embedded Adaptability"@en ;
+    du:addressesObject_m du:object_flexibility-reuse-circularity ;
+    du:evidenceSource "Interview framework"@en ;
+    du:notes "Most mentioned from all types!"@en ;
+    du:performedByStakeholder du:stakeholder_designers ;
+    du:performedInPhase du:phase_design ;
+    du:requiresAction du:verb_plan .
+
+du:U_T58 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T33 ;
+    skos:definition "A mitigation instance that reduces performance uncertainty by anticipating degradation, operational demands, failure risk, and lifecycle impacts, embedding maintenance logic, energy strategy, and durability considerations into long-term planning.",
+        "A mitigation instance that reduces performance uncertainty by anticipating degradation, operational demands, failure risk, and lifecycle impacts, embedding maintenance logic, energy strategy, and durability considerations into long-term planning."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Lifecycle & Maintenance Anticipation",
+        "Lifecycle & Maintenance Anticipation"@en ;
+    du:addressesObject_m du:object_design-solution-technical-definition ;
+    du:evidenceSource "Interview framework"@en ;
+    du:notes "Most mentioned"@en ;
+    du:performedByStakeholder du:stakeholder_facility-managers-operators ;
+    du:performedInPhase du:phase_use-fm ;
+    du:requiresAction du:verb_plan .
+
+du:U_T59 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T33 ;
+    skos:definition "A mitigation instance that reduces adaptability uncertainty during the use phase by enabling reversible reconfiguration, refurbishment, and layout changes without structural intervention.",
+        "A mitigation instance that reduces adaptability uncertainty during the use phase by enabling reversible reconfiguration, refurbishment, and layout changes without structural intervention."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Enable adaptation",
+        "Enable adaptation"@en ;
+    du:addressesObject_m du:object_flexibility-reuse-circularity ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_facility-managers-operators ;
+    du:performedInPhase du:phase_use-fm ;
+    du:requiresAction du:verb_plan .
+
+du:U_T60 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T33 ;
+    skos:definition "A mitigation instance that reduces uncertainty by detailed technical resolution, ensuring robustness, and completeness of design solutions.",
+        "A mitigation instance that reduces uncertainty by detailed technical resolution, ensuring robustness, and completeness of design solutions."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Technical Exhaustivenes",
+        "Technical Exhaustivenes"@en ;
+    du:addressesObject_m du:object_design-solution-technical-definition ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_designers ;
+    du:performedInPhase du:phase_design ;
+    du:requiresAction du:verb_plan .
+
+du:U_T61 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T33 ;
+    skos:definition "A mitigation instance that reduces uncertainty by allocating structured time and analytical effort during early programming to clarify scope and optimize decisions before formal commitments.",
+        "A mitigation instance that reduces uncertainty by allocating structured time and analytical effort during early programming to clarify scope and optimize decisions before formal commitments."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Early planning",
+        "Early planning"@en ;
+    du:addressesObject_m du:object_requirements-brief ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_client-owner ;
+    du:performedInPhase du:phase_initiation-feasibility ;
+    du:requiresAction du:verb_plan .
+
+du:U_T62 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T33 ;
+    skos:definition "A mitigation instance that reduces uncertainty by deliberately selecting appropriate tools and workflows (e.g., CAD vs. BIM) based on project characteristics such as speed and non-standard conditions.",
+        "A mitigation instance that reduces uncertainty by deliberately selecting appropriate tools and workflows (e.g., CAD vs. BIM) based on project characteristics such as speed and non-standard conditions."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Strategic Method & Tool Planning",
+        "Strategic Method & Tool Planning"@en ;
+    du:addressesObject_m du:object_tools-models-bim-vr-sim ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_designers ;
+    du:performedInPhase du:phase_design ;
+    du:requiresAction du:verb_plan .
+
+du:U_T63 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T33 ;
+    skos:definition "A mitigation instance that reduces uncertainty by proactively identifying future information needs and relevant actors early in the project lifecycle.",
+        "A mitigation instance that reduces uncertainty by proactively identifying future information needs and relevant actors early in the project lifecycle."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Proactive Information collection",
+        "Proactive Information collection"@en ;
+    du:addressesObject_m du:object_information-documentation ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_designers ;
+    du:performedInPhase du:phase_initiation-feasibility ;
+    du:requiresAction du:verb_plan .
+
+du:U_T64 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T33 ;
+    skos:definition "A mitigation instance that reduces construction uncertainty by planning sourcing, transport timing, and logistics to stabilize cost and schedule risks.",
+        "A mitigation instance that reduces construction uncertainty by planning sourcing, transport timing, and logistics to stabilize cost and schedule risks."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Supply chain planning",
+        "Supply chain planning"@en ;
+    du:addressesObject_m du:object_supply-chain-logistics ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_contractors ;
+    du:performedInPhase du:phase_construction-execution ;
+    du:requiresAction du:verb_plan .
+
+du:U_T65 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T34 ;
+    skos:definition "A mitigation instance that reduces uncertainty by limiting experimentation in technical and constructive choices, relying on consolidated solutions and selectively allowing innovation only within controlled boundaries.",
+        "A mitigation instance that reduces uncertainty by limiting experimentation in technical and constructive choices, relying on consolidated solutions and selectively allowing innovation only within controlled boundaries."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Relying on well established methods",
+        "Relying on well established methods"@en ;
+    du:addressesObject_m du:object_design-solution-technical-definition ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_designers ;
+    du:performedInPhase du:phase_design ;
+    du:requiresAction du:verb_standardize .
+
+du:U_T66 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T34 ;
+    skos:definition "A mitigation instance that reduces uncertainty by structuring documentation, workflows, and organizational processes into replicable, predictable, and transparent frameworks that guide project development over time.",
+        "A mitigation instance that reduces uncertainty by structuring documentation, workflows, and organizational processes into replicable, predictable, and transparent frameworks that guide project development over time."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Process Standardization",
+        "Process Standardization"@en ;
+    du:addressesObject_m du:object_team-coordination-roles ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_client-owner ;
+    du:performedInPhase du:phase_initiation-feasibility ;
+    du:requiresAction du:verb_standardize .
+
+du:U_T67 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T35 ;
+    skos:definition "A mitigation instance that reduces uncertainty by capturing, updating, and reusing institutional knowledge, regulatory learning, project experience, and performance records over time to support future decision-making and actor selection.",
+        "A mitigation instance that reduces uncertainty by capturing, updating, and reusing institutional knowledge, regulatory learning, project experience, and performance records over time to support future decision-making and actor selection."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Keep Organizational Knowledge",
+        "Keep Organizational Knowledge"@en ;
+    du:addressesObject_m du:object_information-documentation ;
+    du:evidenceSource "Interview framework"@en ;
+    du:notes "Most mentioned"@en ;
+    du:performedByStakeholder du:stakeholder_client-owner ;
+    du:performedInPhase du:phase_post-project-organizational ;
+    du:requiresAction du:verb_track .
+
+du:U_T68 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T35 ;
+    skos:definition "A mitigation instance that reduces uncertainty by progressively collecting, structuring, and validating baseline documentation and contextual knowledge starting from early project phases to avoid informational gaps later.",
+        "A mitigation instance that reduces uncertainty by progressively collecting, structuring, and validating baseline documentation and contextual knowledge starting from early project phases to avoid informational gaps later."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Information documentation",
+        "Information documentation"@en ;
+    du:addressesObject_m du:object_information-documentation ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_designers ;
+    du:performedInPhase du:phase_initiation-feasibility ;
+    du:requiresAction du:verb_track .
+
+du:U_T69 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T35 ;
+    skos:definition "A mitigation instance that reduces uncertainty by systematically recording, tracking, and evaluating reusable furniture and components, enabling informed decisions about reuse, adaptation, or replacement during design and refurbishment",
+        "A mitigation instance that reduces uncertainty by systematically recording, tracking, and evaluating reusable furniture and components, enabling informed decisions about reuse, adaptation, or replacement during design and refurbishment"@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Organizational Asset Tracking for Reuse",
+        "Organizational Asset Tracking for Reuse"@en ;
+    du:addressesObject_m du:object_information-documentation ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_client-owner ;
+    du:performedInPhase du:phase_use-fm ;
+    du:requiresAction du:verb_track .
+
+du:U_T70 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T35 ;
+    skos:definition "A mitigation instance that reduces uncertainty by providing standardized, structured lifecycle information (e.g., Digital Product Passports) about materials and components, supporting circular design and end-of-life decision-making.",
+        "A mitigation instance that reduces uncertainty by providing standardized, structured lifecycle information (e.g., Digital Product Passports) about materials and components, supporting circular design and end-of-life decision-making."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Standardized Lifecycle Information Systems",
+        "Standardized Lifecycle Information Systems"@en ;
+    du:addressesObject_m du:object_information-documentation ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_client-owner ;
+    du:performedInPhase du:phase_use-fm ;
+    du:requiresAction du:verb_track .
+
+du:U_T71 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T35 ;
+    skos:definition "A mitigation instance that reduces uncertainty by maintaining a traceable digital record of design evolution and changes (e.g., via BIM), ensuring continuity and clarity during handovers across actors and phases.",
+        "A mitigation instance that reduces uncertainty by maintaining a traceable digital record of design evolution and changes (e.g., via BIM), ensuring continuity and clarity during handovers across actors and phases."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Design Traceability via Digital Models",
+        "Design Traceability via Digital Models"@en ;
+    du:addressesObject_m du:object_tools-models-bim-vr-sim ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_designers ;
+    du:performedInPhase du:phase_design ;
+    du:requiresAction du:verb_track .
+
+du:U_T72 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T35 ;
+    skos:definition "A mitigation instance that reduces uncertainty by systematically monitoring and documenting construction progress, approvals, and open issues through structured reporting and supervision mechanisms.",
+        "A mitigation instance that reduces uncertainty by systematically monitoring and documenting construction progress, approvals, and open issues through structured reporting and supervision mechanisms."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Construction Progress Tracking",
+        "Construction Progress Tracking"@en ;
+    du:addressesObject_m du:object_information-documentation ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_contractors ;
+    du:performedInPhase du:phase_construction-execution ;
+    du:requiresAction du:verb_track .
+
+du:U_T73 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T36 ;
+    skos:definition "A mitigation instance that reduces uncertainty by verifying the competence, qualifications, and organizational capability of contractors and design teams before engagement or tender award.",
+        "A mitigation instance that reduces uncertainty by verifying the competence, qualifications, and organizational capability of contractors and design teams before engagement or tender award."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Partner Qualification",
+        "Partner Qualification"@en ;
+    du:addressesObject_m du:object_contracts-procurement ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_client-owner ;
+    du:performedInPhase du:phase_tender-contracting ;
+    du:requiresAction du:verb_verify .
+
+du:U_T74 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T36 ;
+    skos:definition "A mitigation instance that reduces uncertainty by systematically verifying that design outputs comply with agreed requirements, specifications, and regulatory frameworks before tendering or execution, preventing deviations and late compliance-related surprises.",
+        "A mitigation instance that reduces uncertainty by systematically verifying that design outputs comply with agreed requirements, specifications, and regulatory frameworks before tendering or execution, preventing deviations and late compliance-related surprises."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Compliance Checking",
+        "Compliance Checking"@en ;
+    du:addressesObject_m du:object_requirements-brief ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_designers ;
+    du:performedInPhase du:phase_design ;
+    du:requiresAction du:verb_verify .
+
+du:U_T75 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T36 ;
+    skos:definition "A mitigation instance that reduces uncertainty by verifying actual spatial or operational performance in use and adjusting assumptions or requirements accordingly.",
+        "A mitigation instance that reduces uncertainty by verifying actual spatial or operational performance in use and adjusting assumptions or requirements accordingly."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Performance-in-Use Validation",
+        "Performance-in-Use Validation"@en ;
+    du:addressesObject_m du:object_users-demand ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_designers ;
+    du:performedInPhase du:phase_design ;
+    du:requiresAction du:verb_verify .
+
+du:U_T76 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T37 ;
+    skos:definition "A mitigation instance that reduces uncertainty by verifying execution quality against detailed technical drawings and approved samples to ensure fidelity between design intent and built outcome.",
+        "A mitigation instance that reduces uncertainty by verifying execution quality against detailed technical drawings and approved samples to ensure fidelity between design intent and built outcome."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Technical quality control",
+        "Technical quality control"@en ;
+    du:addressesObject_m du:object_design-solution-technical-definition ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_contractors ;
+    du:performedInPhase du:phase_construction-execution ;
+    du:requiresAction du:verb_verify .
+
+du:U_T77 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:U_T38 ;
+    skos:definition "A mitigation instance that reduces uncertainty by verifying maintenance actions for feasibility, durability, and interference with design intent before implementation.",
+        "A mitigation instance that reduces uncertainty by verifying maintenance actions for feasibility, durability, and interference with design intent before implementation."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Maintenance plan",
+        "Maintenance plan"@en ;
+    du:addressesObject_m du:object_design-solution-technical-definition ;
+    du:evidenceSource "Interview framework"@en ;
+    du:performedByStakeholder du:stakeholder_facility-managers-operators ;
+    du:performedInPhase du:phase_use-fm ;
+    du:requiresAction du:verb_verify .
+
+du:object_regulations a skos:Concept,
+        du:Object ;
+    skos:inScheme du:scheme ;
+    skos:prefLabel "Regulations"@en .
+
+du:phase_post-project-organizational a skos:Concept,
+        du:Phase ;
+    skos:inScheme du:scheme ;
+    skos:prefLabel "Post-project / Organizational"@en .
+
+du:stakeholder_end-users a skos:Concept,
+        du:Stakeholder ;
+    skos:inScheme du:scheme ;
+    skos:prefLabel "End Users"@en .
+
+du:stakeholder_regulators-authorities a skos:Concept,
+        du:Stakeholder ;
+    skos:inScheme du:scheme ;
+    skos:prefLabel "Regulators / Authorities"@en .
+
+du:U_T05 a skos:Concept,
+        du:Uncertainty ;
+    skos:broader du:Uncertainty ;
+    skos:definition "Uncertainty about how the building will perform over time in real conditions, including degradation, changing performance expectations, and gaps between predicted and actual performance.",
+        "Uncertainty about how the building will perform over time in real conditions, including degradation, changing performance expectations, and gaps between predicted and actual performance."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Performance uncertainty",
+        "Performance uncertainty"@en ;
+    skos:topConceptOf du:scheme ;
     du:level "Type"^^xsd:string .
 
-du:U_T06 a skos:Concept,
+du:U_T08 a skos:Concept,
         du:Uncertainty ;
-    skos:definition "Uncertainty arising from statutory requirements, permitting and approvals, interpretation differences, and changes in regulations that constrain design decisions and timelines."@en ;
-    skos:prefLabel "Regulatory uncertainty"@en ;
+    skos:broader du:Uncertainty ;
+    skos:definition "Uncertainty about whether and when a project can be delivered as intended due to viability, funding, or dependence on external enabling conditions (e.g., infrastructure capacity and connections).",
+        "Uncertainty about whether and when a project can be delivered as intended due to viability, funding, or dependence on external enabling conditions (e.g., infrastructure capacity and connections)."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:prefLabel "Project realization & feasibility uncertainty",
+        "Project realization & feasibility uncertainty"@en ;
+    skos:topConceptOf du:scheme ;
     du:level "Type"^^xsd:string .
 
 du:U_T37 a skos:Concept,
         du:Mitigation ;
     skos:broader du:U_T29 ;
-    skos:definition "A mitigation instance that reduces uncertainty by grounding decisions in detailed analysis of existing physical, historical, environmental, and regulatory conditions, ensuring that design and feasibility judgments are based on verified contextual evidence rather than assumptions."@en ;
-    skos:prefLabel "Early stage contextual analysis"@en ;
+    skos:definition "A mitigation instance that reduces uncertainty by grounding decisions in detailed analysis of existing physical, historical, environmental, and regulatory conditions, ensuring that design and feasibility judgments are based on verified contextual evidence rather than assumptions.",
+        "A mitigation instance that reduces uncertainty by grounding decisions in detailed analysis of existing physical, historical, environmental, and regulatory conditions, ensuring that design and feasibility judgments are based on verified contextual evidence rather than assumptions."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:narrower du:U_T76 ;
+    skos:prefLabel "Early stage contextual analysis",
+        "Early stage contextual analysis"@en ;
     du:addressesObject_m du:object_information-documentation ;
     du:evidenceSource "Interview framework"@en ;
     du:notes "Most mentioned"@en ;
@@ -811,8 +1083,13 @@ du:U_T37 a skos:Concept,
 du:U_T38 a skos:Concept,
         du:Mitigation ;
     skos:broader du:U_T29 ;
-    skos:definition "A mitigation instance that reduces uncertainty by systematically analyzing observed, measured, or comparable user and market behavior to validate assumptions about requirements, spatial performance, and commercial viability."@en ;
-    skos:prefLabel "Market and User Evidence Analysis"@en ;
+    skos:definition "A mitigation instance that reduces uncertainty by systematically analyzing observed, measured, or comparable user and market behavior to validate assumptions about requirements, spatial performance, and commercial viability.",
+        "A mitigation instance that reduces uncertainty by systematically analyzing observed, measured, or comparable user and market behavior to validate assumptions about requirements, spatial performance, and commercial viability."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:narrower du:U_T77 ;
+    skos:prefLabel "Market and User Evidence Analysis",
+        "Market and User Evidence Analysis"@en ;
     du:addressesObject_m du:object_users-demand ;
     du:evidenceSource "Interview framework"@en ;
     du:notes "Most mentioned"@en ;
@@ -820,223 +1097,434 @@ du:U_T38 a skos:Concept,
     du:performedInPhase du:phase_briefing-requirements ;
     du:requiresAction du:verb_analyze .
 
-du:object_regulations a skos:Concept,
-        du:Object ;
-    skos:prefLabel "Regulations"@en .
-
-du:phase_post-project-organizational a skos:Concept,
-        du:Phase ;
-    skos:prefLabel "Post-project / Organizational"@en .
-
-du:stakeholder_end-users a skos:Concept,
-        du:Stakeholder ;
-    skos:prefLabel "End Users"@en .
-
-du:stakeholder_regulators-authorities a skos:Concept,
-        du:Stakeholder ;
-    skos:prefLabel "Regulators / Authorities"@en .
-
-du:U_T34 a skos:Concept,
-        du:Mitigation ;
-    skos:definition "A mitigation strategy that reduces uncertainty by predefining technologies, documentation, and processes, relying on consolidated, repeatable, and well-understood practices, while confining experimentation to explicitly controlled areas."@en ;
-    skos:prefLabel "Controlled standardization"@en ;
-    du:level "Type"^^xsd:string .
-
 du:object_decisions-governance a skos:Concept,
         du:Object ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Decisions & Governance"@en .
 
 du:verb_standardize a skos:Concept,
         du:ActionVerb ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Standardize"@en .
 
-du:U_T36 a skos:Concept,
-        du:Mitigation ;
-    skos:definition "A mitigation strategy that reduces uncertainty by systematically checking decisions, actors, designs, and outcomes against explicit criteria, evidence, or reference standards, identifying mismatches early and preventing unverified assumptions from propagating across project phases."@en ;
-    skos:prefLabel "Verification and validation"@en ;
+du:U_T02 a skos:Concept,
+        du:Uncertainty ;
+    skos:broader du:Uncertainty ;
+    skos:definition "Uncertainty related to a building’s ability to accommodate future changes or adapt to evolving needs, technologies, or external conditions over time.",
+        "Uncertainty related to a building’s ability to accommodate future changes or adapt to evolving needs, technologies, or external conditions over time."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:narrower du:U_T15 ;
+    skos:prefLabel "Flexibility and adaptability uncertainty",
+        "Flexibility and adaptability uncertainty"@en ;
+    skos:topConceptOf du:scheme ;
+    du:level "Type"^^xsd:string .
+
+du:U_T06 a skos:Concept,
+        du:Uncertainty ;
+    skos:broader du:Uncertainty ;
+    skos:definition "Uncertainty arising from statutory requirements, permitting and approvals, interpretation differences, and changes in regulations that constrain design decisions and timelines.",
+        "Uncertainty arising from statutory requirements, permitting and approvals, interpretation differences, and changes in regulations that constrain design decisions and timelines."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:narrower du:U_T09 ;
+    skos:prefLabel "Regulatory uncertainty",
+        "Regulatory uncertainty"@en ;
+    skos:topConceptOf du:scheme ;
     du:level "Type"^^xsd:string .
 
 du:object_flexibility-reuse-circularity a skos:Concept,
         du:Object ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Flexibility / Reuse / Circularity"@en .
 
 du:object_market-demand a skos:Concept,
         du:Object ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Market demand"@en .
 
 du:object_users-demand a skos:Concept,
         du:Object ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Users & Demand"@en .
 
-du:U_T01 a skos:Concept,
-        du:Uncertainty ;
-    skos:definition "Uncertainty arising from unclear or incomplete user requirements."@en ;
-    skos:prefLabel "Design requirements uncertainty"@en ;
-    du:level "Type"^^xsd:string .
-
-du:U_T04 a skos:Concept,
-        du:Uncertainty ;
-    skos:definition "Uncertainty arising from incomplete, inaccurate, or inconsistently represented information,  particularly due to the processes and models used to represent reality for design decisions, including assumptions, simplifications, and uncertain input parameters."@en ;
-    skos:prefLabel "Information uncertainty"@en ;
-    du:level "Type"^^xsd:string .
-
-du:U_T07 a skos:Concept,
-        du:Uncertainty ;
-    skos:definition "Uncertainty arising from external economic, market, fiscal, geopolitical, and price/availability conditions that affect costs, demand, and project constraints over time."@en ;
-    skos:prefLabel "Socio-economic & market uncertainty"@en ;
-    du:level "Type"^^xsd:string .
-
-du:U_T29 a skos:Concept,
+du:U_T34 a skos:Concept,
         du:Mitigation ;
-    skos:definition "A mitigation strategy that reduces uncertainty by systematically interpreting empirical, contextual, and comparative evidence, rather than assumptions, to inform decisions about requirements, design solutions, and performance."@en ;
-    skos:prefLabel "Evidence-based interpretation"@en ;
-    du:level "Type"^^xsd:string .
-
-du:U_T31 a skos:Concept,
-        du:Mitigation ;
-    skos:definition "A mitigation strategy that reduces uncertainty by explicitly fixing reference points, boundaries, and decision criteri such as requirements, scopes, roles, thresholds, and contractual conditions so that ambiguity does not propagate across project phases."@en ;
-    skos:prefLabel "Define ans formalize"@en ;
+    skos:broader du:Mitigation ;
+    skos:definition "A mitigation strategy that reduces uncertainty by predefining technologies, documentation, and processes, relying on consolidated, repeatable, and well-understood practices, while confining experimentation to explicitly controlled areas.",
+        "A mitigation strategy that reduces uncertainty by predefining technologies, documentation, and processes, relying on consolidated, repeatable, and well-understood practices, while confining experimentation to explicitly controlled areas."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:narrower du:U_T65,
+        du:U_T66 ;
+    skos:prefLabel "Controlled standardization",
+        "Controlled standardization"@en ;
+    skos:topConceptOf du:scheme ;
     du:level "Type"^^xsd:string .
 
 du:object_supply-chain-logistics a skos:Concept,
         du:Object ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Supply Chain & Logistics"@en .
 
 du:stakeholder_facility-managers-operators a skos:Concept,
         du:Stakeholder ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Facility Managers / Operators"@en .
 
 du:stakeholder_market-actors a skos:Concept,
         du:Stakeholder ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Market Actors"@en .
 
 du:verb_analyze a skos:Concept,
         du:ActionVerb ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Analyze"@en .
 
 du:verb_define a skos:Concept,
         du:ActionVerb ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Define"@en .
+
+du:U_T36 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:Mitigation ;
+    skos:definition "A mitigation strategy that reduces uncertainty by systematically checking decisions, actors, designs, and outcomes against explicit criteria, evidence, or reference standards, identifying mismatches early and preventing unverified assumptions from propagating across project phases.",
+        "A mitigation strategy that reduces uncertainty by systematically checking decisions, actors, designs, and outcomes against explicit criteria, evidence, or reference standards, identifying mismatches early and preventing unverified assumptions from propagating across project phases."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:narrower du:U_T73,
+        du:U_T74,
+        du:U_T75 ;
+    skos:prefLabel "Verification and validation",
+        "Verification and validation"@en ;
+    skos:topConceptOf du:scheme ;
+    du:level "Type"^^xsd:string .
 
 du:nature_aleatory a skos:Concept,
         du:Nature ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Aleatory"@en .
 
 du:object_contracts-procurement a skos:Concept,
         du:Object ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Contracts & Procurement"@en .
 
 du:object_team-coordination-roles a skos:Concept,
         du:Object ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Team & Coordination Roles"@en .
 
 du:verb_verify a skos:Concept,
         du:ActionVerb ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Verify"@en .
 
-du:U_T03 a skos:Concept,
+du:U_T01 a skos:Concept,
         du:Uncertainty ;
-    skos:definition "Uncertainty arising from the iterative and evolving nature of the design process, including coordination between stakeholders and systems,  and changes in decisions."@en ;
-    skos:prefLabel "Design process uncertainty"@en ;
+    skos:broader du:Uncertainty ;
+    skos:definition "Uncertainty arising from unclear or incomplete user requirements.",
+        "Uncertainty arising from unclear or incomplete user requirements."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:narrower du:U_T10,
+        du:U_T11,
+        du:U_T12,
+        du:U_T27 ;
+    skos:prefLabel "Design requirements uncertainty",
+        "Design requirements uncertainty"@en ;
+    skos:topConceptOf du:scheme ;
     du:level "Type"^^xsd:string .
 
-du:U_T30 a skos:Concept,
-        du:Mitigation ;
-    skos:definition "A mitigation strategy that reduces uncertainty by aligning actors, roles, and interpretations so that decisions and information remain coherent across project phases."@en ;
-    skos:prefLabel "Coordinate"@en ;
+du:U_T04 a skos:Concept,
+        du:Uncertainty ;
+    skos:broader du:Uncertainty ;
+    skos:definition "Uncertainty arising from incomplete, inaccurate, or inconsistently represented information, particularly due to the processes and models used to represent reality for design decisions, including assumptions, simplifications, and uncertain input parameters.",
+        "Uncertainty arising from incomplete, inaccurate, or inconsistently represented information,  particularly due to the processes and models used to represent reality for design decisions, including assumptions, simplifications, and uncertain input parameters."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:narrower du:U_T23,
+        du:U_T25,
+        du:U_T26,
+        du:U_T28 ;
+    skos:prefLabel "Information uncertainty",
+        "Information uncertainty"@en ;
+    skos:topConceptOf du:scheme ;
     du:level "Type"^^xsd:string .
 
-du:U_T32 a skos:Concept,
-        du:Mitigation ;
-    skos:definition "A mitigation strategy that reduces uncertainty by constructing explicit representations, often using digital technologies, that make future states, constraints, and consequences visible, explorable, and comparable, without requiring immediate commitment."@en ;
-    skos:prefLabel "Represent and simulate"@en ;
+du:U_T07 a skos:Concept,
+        du:Uncertainty ;
+    skos:broader du:Uncertainty ;
+    skos:definition "Uncertainty arising from external economic, market, fiscal, geopolitical, and price/availability conditions that affect costs, demand, and project constraints over time.",
+        "Uncertainty arising from external economic, market, fiscal, geopolitical, and price/availability conditions that affect costs, demand, and project constraints over time."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:narrower du:U_T13,
+        du:U_T20,
+        du:U_T21,
+        du:U_T24 ;
+    skos:prefLabel "Socio-economic & market uncertainty",
+        "Socio-economic & market uncertainty"@en ;
+    skos:topConceptOf du:scheme ;
     du:level "Type"^^xsd:string .
 
-du:U_T35 a skos:Concept,
+du:U_T29 a skos:Concept,
         du:Mitigation ;
-    skos:definition "A mitigation strategy that reduces uncertainty by systematically recording, updating, and preserving information, decisions, and experience over time, ensuring traceability, continuity, and reuse of knowledge across project phases, actors, and lifecycle stages."@en ;
-    skos:prefLabel "Track and preserve information"@en ;
+    skos:broader du:Mitigation ;
+    skos:definition "A mitigation strategy that reduces uncertainty by systematically interpreting empirical, contextual, and comparative evidence, rather than assumptions, to inform decisions about requirements, design solutions, and performance.",
+        "A mitigation strategy that reduces uncertainty by systematically interpreting empirical, contextual, and comparative evidence, rather than assumptions, to inform decisions about requirements, design solutions, and performance."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:narrower du:U_T37,
+        du:U_T38,
+        du:U_T39,
+        du:U_T40 ;
+    skos:prefLabel "Evidence-based interpretation",
+        "Evidence-based interpretation"@en ;
+    skos:topConceptOf du:scheme ;
+    du:level "Type"^^xsd:string .
+
+du:U_T31 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:Mitigation ;
+    skos:definition "A mitigation strategy that reduces uncertainty by explicitly fixing reference points, boundaries, and decision criteri such as requirements, scopes, roles, thresholds, and contractual conditions so that ambiguity does not propagate across project phases.",
+        "A mitigation strategy that reduces uncertainty by explicitly fixing reference points, boundaries, and decision criteri such as requirements, scopes, roles, thresholds, and contractual conditions so that ambiguity does not propagate across project phases."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:narrower du:U_T47,
+        du:U_T48,
+        du:U_T49,
+        du:U_T50 ;
+    skos:prefLabel "Define ans formalize",
+        "Define ans formalize"@en ;
+    skos:topConceptOf du:scheme ;
     du:level "Type"^^xsd:string .
 
 du:nature_strategic a skos:Concept,
         du:Nature ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Strategic"@en .
 
 du:phase_tender-contracting a skos:Concept,
         du:Phase ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Tender / Contracting"@en .
 
 du:stakeholder_contractors a skos:Concept,
         du:Stakeholder ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Contractors"@en .
 
 du:verb_coordinate a skos:Concept,
         du:ActionVerb ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Coordinate"@en .
 
 du:verb_model a skos:Concept,
         du:ActionVerb ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Model"@en .
 
 du:verb_track a skos:Concept,
         du:ActionVerb ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Track"@en .
 
 du:object_requirements-brief a skos:Concept,
         du:Object ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Requirements & Brief"@en .
 
 du:phase_briefing-requirements a skos:Concept,
         du:Phase ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Briefing / Requirements"@en .
 
 du:phase_use-fm a skos:Concept,
         du:Phase ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Use / FM"@en .
 
-du:U_T33 a skos:Concept,
+du:U_T03 a skos:Concept,
+        du:Uncertainty ;
+    skos:broader du:Uncertainty ;
+    skos:definition "Uncertainty arising from the iterative and evolving nature of the design process, including coordination between stakeholders and systems, and changes in decisions.",
+        "Uncertainty arising from the iterative and evolving nature of the design process, including coordination between stakeholders and systems,  and changes in decisions."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:narrower du:U_T14,
+        du:U_T16,
+        du:U_T17,
+        du:U_T18,
+        du:U_T19,
+        du:U_T22 ;
+    skos:prefLabel "Design process uncertainty",
+        "Design process uncertainty"@en ;
+    skos:topConceptOf du:scheme ;
+    du:level "Type"^^xsd:string .
+
+du:U_T30 a skos:Concept,
         du:Mitigation ;
-    skos:definition "A mitigation strategy that reduces uncertainty by anticipating future conditions, transformations, and operational demands during early decision-making, and embedding these expectations into design, technical systems, contracts, and operational strategies so that change, degradation, and evolution can occur without disruptive intervention."@en ;
-    skos:prefLabel "Plan ahead"@en ;
+    skos:broader du:Mitigation ;
+    skos:definition "A mitigation strategy that reduces uncertainty by aligning actors, roles, and interpretations so that decisions and information remain coherent across project phases.",
+        "A mitigation strategy that reduces uncertainty by aligning actors, roles, and interpretations so that decisions and information remain coherent across project phases."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:narrower du:U_T41,
+        du:U_T42,
+        du:U_T43,
+        du:U_T44,
+        du:U_T45,
+        du:U_T46 ;
+    skos:prefLabel "Coordinate",
+        "Coordinate"@en ;
+    skos:topConceptOf du:scheme ;
+    du:level "Type"^^xsd:string .
+
+du:U_T32 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:Mitigation ;
+    skos:definition "A mitigation strategy that reduces uncertainty by constructing explicit representations, often using digital technologies, that make future states, constraints, and consequences visible, explorable, and comparable, without requiring immediate commitment.",
+        "A mitigation strategy that reduces uncertainty by constructing explicit representations, often using digital technologies, that make future states, constraints, and consequences visible, explorable, and comparable, without requiring immediate commitment."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:narrower du:U_T51,
+        du:U_T52,
+        du:U_T53,
+        du:U_T54,
+        du:U_T55,
+        du:U_T56 ;
+    skos:prefLabel "Represent and simulate",
+        "Represent and simulate"@en ;
+    skos:topConceptOf du:scheme ;
+    du:level "Type"^^xsd:string .
+
+du:U_T35 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:Mitigation ;
+    skos:definition "A mitigation strategy that reduces uncertainty by systematically recording, updating, and preserving information, decisions, and experience over time, ensuring traceability, continuity, and reuse of knowledge across project phases, actors, and lifecycle stages.",
+        "A mitigation strategy that reduces uncertainty by systematically recording, updating, and preserving information, decisions, and experience over time, ensuring traceability, continuity, and reuse of knowledge across project phases, actors, and lifecycle stages."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:narrower du:U_T67,
+        du:U_T68,
+        du:U_T69,
+        du:U_T70,
+        du:U_T71,
+        du:U_T72 ;
+    skos:prefLabel "Track and preserve information",
+        "Track and preserve information"@en ;
+    skos:topConceptOf du:scheme ;
     du:level "Type"^^xsd:string .
 
 du:object_tools-models-bim-vr-sim a skos:Concept,
         du:Object ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Tools & Models (BIM/VR/Sim)"@en .
 
 du:phase_construction-execution a skos:Concept,
         du:Phase ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Construction / Execution"@en .
 
 du:verb_plan a skos:Concept,
         du:ActionVerb ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Plan"@en .
 
 du:object_design-solution-technical-definition a skos:Concept,
         du:Object ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Design Solution & Technical Definition"@en .
+
+du:U_T33 a skos:Concept,
+        du:Mitigation ;
+    skos:broader du:Mitigation ;
+    skos:definition "A mitigation strategy that reduces uncertainty by anticipating future conditions, transformations, and operational demands during early decision-making, and embedding these expectations into design, technical systems, contracts, and operational strategies so that change, degradation, and evolution can occur without disruptive intervention.",
+        "A mitigation strategy that reduces uncertainty by anticipating future conditions, transformations, and operational demands during early decision-making, and embedding these expectations into design, technical systems, contracts, and operational strategies so that change, degradation, and evolution can occur without disruptive intervention."@en ;
+    skos:inScheme <https://w3id.org/design-uncertainty>,
+        du:scheme ;
+    skos:narrower du:U_T57,
+        du:U_T58,
+        du:U_T59,
+        du:U_T60,
+        du:U_T61,
+        du:U_T62,
+        du:U_T63,
+        du:U_T64 ;
+    skos:prefLabel "Plan ahead",
+        "Plan ahead"@en ;
+    skos:topConceptOf du:scheme ;
+    du:level "Type"^^xsd:string .
 
 du:object_information-documentation a skos:Concept,
         du:Object ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Information & Documentation"@en .
 
 du:phase_initiation-feasibility a skos:Concept,
         du:Phase ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Initiation / Feasibility"@en .
 
 du:nature_epistemic a skos:Concept,
         du:Nature ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Epistemic"@en .
 
 du:stakeholder_client-owner a skos:Concept,
         du:Stakeholder ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Client / Owner"@en .
 
 du:phase_design a skos:Concept,
         du:Phase ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Design"@en .
 
 du:stakeholder_designers a skos:Concept,
         du:Stakeholder ;
+    skos:inScheme du:scheme ;
     skos:prefLabel "Designers"@en .
+
+<https://w3id.org/design-uncertainty> a skos:ConceptScheme ;
+    dct:created "2026-06-27"^^xsd:date ;
+    dct:creator "Bloch, T.; Isaac, S.; Boscariol, M.; Waltzer, A.; Tagliabue, L.C."@en ;
+    dct:language "en" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    skos:definition "A SKOS concept scheme for design uncertainty and mitigation concepts in building projects."@en ;
+    skos:hasTopConcept du:Mitigation,
+        du:Uncertainty ;
+    skos:prefLabel "Design Uncertainty Taxonomy"@en .
+
+du:scheme a skos:ConceptScheme ;
+    dct:created "2026-06-27"^^xsd:date ;
+    dct:creator "Bloch, T.; Isaac, S.; Boscariol, M.; Waltzer, A.; Tagliabue, L.C."@en ;
+    dct:description "The SKOS concept scheme used within the Design Uncertainty Model."@en ;
+    dct:language "en" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:modified "2026-06-27"^^xsd:date ;
+    dct:title "Design Uncertainty Taxonomy"@en ;
+    skos:definition "A concept scheme describing types of design uncertainty and mitigation strategies in building projects."@en ;
+    skos:hasTopConcept du:Mitigation,
+        du:U_T01,
+        du:U_T02,
+        du:U_T03,
+        du:U_T04,
+        du:U_T05,
+        du:U_T06,
+        du:U_T07,
+        du:U_T08,
+        du:U_T29,
+        du:U_T30,
+        du:U_T31,
+        du:U_T32,
+        du:U_T33,
+        du:U_T34,
+        du:U_T35,
+        du:U_T36,
+        du:Uncertainty ;
+    skos:prefLabel "Design Uncertainty Taxonomy"@en .
 

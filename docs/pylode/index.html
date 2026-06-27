@@ -297,7 +297,7 @@
     <script id="schema.org" type="application/ld+json">
 [
   {
-    "@id": "https://w3id.org/design-uncertainty/scheme",
+    "@id": "https://w3id.org/design-uncertainty",
     "@type": [
       "https://schema.org/DefinedTermSet"
     ],
@@ -313,20 +313,10 @@
         "@value": "2026-06-27"
       }
     ],
-    "https://schema.org/dateModified": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-06-27"
-      }
-    ],
     "https://schema.org/description": [
       {
         "@language": "en",
-        "@value": "The SKOS concept scheme used within the Design Uncertainty Model."
-      },
-      {
-        "@language": "en",
-        "@value": "A concept scheme describing types of design uncertainty and mitigation strategies in building projects."
+        "@value": "A SKOS concept scheme for design uncertainty and mitigation concepts in building projects."
       }
     ],
     "https://schema.org/license": [
@@ -385,6 +375,51 @@
         "@value": "Design Uncertainty Model"
       }
     ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/scheme",
+    "@type": [
+      "https://schema.org/DefinedTermSet"
+    ],
+    "https://schema.org/creator": [
+      {
+        "@language": "en",
+        "@value": "Bloch, T.; Isaac, S.; Boscariol, M.; Waltzer, A.; Tagliabue, L.C."
+      }
+    ],
+    "https://schema.org/dateCreated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2026-06-27"
+      }
+    ],
+    "https://schema.org/dateModified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2026-06-27"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@language": "en",
+        "@value": "The SKOS concept scheme used within the Design Uncertainty Model."
+      },
+      {
+        "@language": "en",
+        "@value": "A concept scheme describing types of design uncertainty and mitigation strategies in building projects."
+      }
+    ],
+    "https://schema.org/license": [
+      {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "en",
+        "@value": "Design Uncertainty Taxonomy"
+      }
+    ]
   }
 ]
 	</script>
@@ -392,7 +427,7 @@
   <body>
     <div id="content">
       <div class="section" id="metadata">
-        <h1>Design Uncertainty ModelDesign Uncertainty Taxonomy</h1>
+        <h1>Design Uncertainty ModelDesign Uncertainty TaxonomyDesign Uncertainty Taxonomy</h1>
         <h2>Metadata</h2>
         <dl>
           <div>
@@ -411,6 +446,7 @@
               <ul class="pylodelitlist">
                 <li><p>Design Uncertainty Model</p></li>
                 <li><p>Design Uncertainty Taxonomy</p></li>
+                <li><p>Design Uncertainty Taxonomy</p></li>
               </ul>
             </dd>
           </div>
@@ -422,6 +458,7 @@
               <ul class="pylodelitlist">
                 <li><p>Bloch, T.; Isaac, S.; Boscariol, M.; Waltzer, A.; Tagliabue, L.C.</p></li>
                 <li><p>Bloch, T.; Isaac, S.; Boscariol, M.; Waltzer, A.; Tagliabue, L.C.</p></li>
+                <li><p>Bloch, T.; Isaac, S.; Boscariol, M.; Waltzer, A.; Tagliabue, L.C.</p></li>
               </ul>
             </dd>
           </div>
@@ -431,6 +468,7 @@
             </dt>
             <dd>
               <ul class="pylodelitlist">
+                <li><p>2026-06-27</p></li>
                 <li><p>2026-06-27</p></li>
                 <li><p>2026-06-27</p></li>
               </ul>
@@ -453,6 +491,9 @@
             </dt>
             <dd>
               <ul class="pylodelitlist">
+                <li>
+                  <a href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a>
+                </li>
                 <li>
                   <a href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a>
                 </li>
@@ -490,6 +531,7 @@
               <ul class="pylodelitlist">
                 <li><p>A semantic model combining a SKOS taxonomy of design uncertainty and mitigation concepts with additional classes and properties for phase, stakeholder, nature, object, and action.</p></li>
                 <li><p>A combined ontology and SKOS vocabulary for representing design uncertainty and mitigation strategies in building projects.</p></li>
+                <li><p>A SKOS concept scheme for design uncertainty and mitigation concepts in building projects.</p></li>
                 <li><p>The SKOS concept scheme used within the Design Uncertainty Model.</p></li>
                 <li><p>A concept scheme describing types of design uncertainty and mitigation strategies in building projects.</p></li>
               </ul>
@@ -503,13 +545,73 @@
               <ul class="pylodelitlist">
                 <li>
                   <span>
-                    <a href="#Uncertainty">du:Uncertainty</a>
+                    <a href="#Mitigation">Mitigation strategy</a>
                     <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                   </span>
                 </li>
                 <li>
                   <span>
-                    <a href="#Mitigation">du:Mitigation</a>
+                    <a href="#Uncertainty">Uncertainty</a>
+                    <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <a href="#Mitigation">Mitigation strategy</a>
+                    <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                  </span>
+                </li>
+                <li>
+                  <a href="#U_T01">Design requirements uncertainty</a>
+                </li>
+                <li>
+                  <a href="#U_T02">Flexibility and adaptability uncertainty</a>
+                </li>
+                <li>
+                  <a href="#U_T03">Design process uncertainty</a>
+                </li>
+                <li>
+                  <a href="#U_T04">Information uncertainty</a>
+                </li>
+                <li>
+                  <a href="#U_T05">Performance uncertainty</a>
+                </li>
+                <li>
+                  <a href="#U_T06">Regulatory uncertainty</a>
+                </li>
+                <li>
+                  <a href="#U_T07">Socio-economic &amp; market uncertainty</a>
+                </li>
+                <li>
+                  <a href="#U_T08">Project realization &amp; feasibility uncertainty</a>
+                </li>
+                <li>
+                  <a href="#U_T29">Evidence-based interpretation</a>
+                </li>
+                <li>
+                  <a href="#U_T30">Coordinate</a>
+                </li>
+                <li>
+                  <a href="#U_T31">Define ans formalize</a>
+                </li>
+                <li>
+                  <a href="#U_T32">Represent and simulate</a>
+                </li>
+                <li>
+                  <a href="#U_T33">Plan ahead</a>
+                </li>
+                <li>
+                  <a href="#U_T34">Controlled standardization</a>
+                </li>
+                <li>
+                  <a href="#U_T35">Track and preserve information</a>
+                </li>
+                <li>
+                  <a href="#U_T36">Verification and validation</a>
+                </li>
+                <li>
+                  <span>
+                    <a href="#Uncertainty">Uncertainty</a>
                     <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                   </span>
                 </li>
@@ -527,7 +629,7 @@
               <a href="#ActionVerb">Action Verb</a>
             </li>
             <li>
-              <a href="#Mitigation">Mitigation</a>
+              <a href="#Mitigation">Mitigation strategy</a>
             </li>
             <li>
               <a href="#Nature">Nature</a>
@@ -572,7 +674,7 @@
           </table>
         </div>
         <div class="property entity" id="Mitigation">
-          <h3>Mitigation
+          <h3>Mitigation strategy
             <sup class="sup-c" title="OWL/RDFS Class">c</sup>
           </h3>
           <table>
@@ -809,7 +911,7 @@
               </th>
               <td>
                 <span>
-                  <a href="#Uncertainty">du:Uncertainty</a>
+                  <a href="#Uncertainty">Uncertainty</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -844,7 +946,7 @@
               </th>
               <td>
                 <span>
-                  <a href="#Uncertainty">du:Uncertainty</a>
+                  <a href="#Uncertainty">Uncertainty</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -879,7 +981,7 @@
               </th>
               <td>
                 <span>
-                  <a href="#Mitigation">du:Mitigation</a>
+                  <a href="#Mitigation">Mitigation strategy</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -914,7 +1016,7 @@
               </th>
               <td>
                 <span>
-                  <a href="#Uncertainty">du:Uncertainty</a>
+                  <a href="#Uncertainty">Uncertainty</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -949,7 +1051,7 @@
               </th>
               <td>
                 <span>
-                  <a href="#Uncertainty">du:Uncertainty</a>
+                  <a href="#Uncertainty">Uncertainty</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -984,7 +1086,7 @@
               </th>
               <td>
                 <span>
-                  <a href="#Mitigation">du:Mitigation</a>
+                  <a href="#Mitigation">Mitigation strategy</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1019,7 +1121,7 @@
               </th>
               <td>
                 <span>
-                  <a href="#Mitigation">du:Mitigation</a>
+                  <a href="#Mitigation">Mitigation strategy</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1054,7 +1156,7 @@
               </th>
               <td>
                 <span>
-                  <a href="#Mitigation">du:Mitigation</a>
+                  <a href="#Mitigation">Mitigation strategy</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1160,7 +1262,7 @@
               <a href="#ActionVerb">Action Verb</a>
             </li>
             <li style="margin-left:10px;">
-              <a href="#Mitigation">Mitigation</a>
+              <a href="#Mitigation">Mitigation strategy</a>
             </li>
             <li style="margin-left:10px;">
               <a href="#Nature">Nature</a>
