@@ -4,11 +4,37 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
 
-du:annotations
+du:
     a owl:Ontology ;
-    rdfs:label "Design Uncertainty Annotations"@en ;
-    owl:imports <https://w3id.org/design-uncertainty/core.ttl> .
+    rdfs:label "Design Uncertainty Model"@en ;
+    rdfs:comment "A combined ontology and SKOS vocabulary for representing design uncertainty and mitigation strategies in building projects."@en ;
+    dct:title "Design Uncertainty Model"@en ;
+    dct:description "A semantic model combining a SKOS taxonomy of design uncertainty and mitigation concepts with additional classes and properties for phase, stakeholder, nature, object, and action."@en ;
+    dct:creator "Bloch, T.; Isaac, S.; Boscariol, M.; Waltzer, A.; Tagliabue, L.C."@en ;
+    dct:created "2026-06-27"^^xsd:date ;
+    dct:modified "2026-06-27"^^xsd:date ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    vann:preferredNamespacePrefix "du" ;
+    vann:preferredNamespaceUri "https://w3id.org/design-uncertainty/" ;
+    owl:versionInfo "0.1.0" ;
+    rdfs:seeAlso du:scheme .
+
+du:scheme
+    a skos:ConceptScheme ;
+    skos:prefLabel "Design Uncertainty Taxonomy"@en ;
+    skos:definition "A concept scheme describing types of design uncertainty and mitigation strategies in building projects."@en ;
+    dct:title "Design Uncertainty Taxonomy"@en ;
+    dct:description "The SKOS concept scheme used within the Design Uncertainty Model."@en ;
+    dct:creator "Bloch, T.; Isaac, S.; Boscariol, M.; Waltzer, A.; Tagliabue, L.C."@en ;
+    dct:created "2026-06-27"^^xsd:date ;
+    dct:modified "2026-06-27"^^xsd:date ;
+    dct:created "2026-06-27"^^xsd:date ;
+    dct:language "en" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    skos:hasTopConcept <https://w3id.org/design-uncertainty/Uncertainty>, <https://w3id.org/design-uncertainty/Mitigation> .
 
 du:ActionVerb a rdfs:Class .
 
