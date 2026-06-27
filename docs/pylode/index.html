@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Design Uncertainty Annotations</title>
     <style>
         #pylode {
             position: fixed;
@@ -42,8 +41,8 @@
         }
 
         dl {
-            /*border: 1px solid navy;*/
-            /*padding:5px;*/
+            border: 1px solid navy;
+            padding:5px;
         }
 
         dt {
@@ -83,7 +82,7 @@
             padding: 10px;
         }
 
-        ul.hierarchy {=
+        ul.hierarchy {
             padding: 5px 25px 5px 25px;
         }
 
@@ -300,12 +299,6 @@
     "@id": "https://w3id.org/design-uncertainty/annotations",
     "@type": [
       "https://schema.org/DefinedTermSet"
-    ],
-    "https://schema.org/name": [
-      {
-        "@language": "en",
-        "@value": "Design Uncertainty Annotations"
-      }
     ]
   }
 ]
@@ -314,7 +307,7 @@
   <body>
     <div id="content">
       <div class="section" id="metadata">
-        <h1>Design Uncertainty Annotations</h1>
+        <h1></h1>
         <h2>Metadata</h2>
         <dl>
           <div>
@@ -325,572 +318,2947 @@
               <code>https://w3id.org/design-uncertainty/annotations</code>
             </dd>
           </div>
-          <div>
-            <dt>
-              <a class="hover_property" href="http://purl.org/dc/terms/title" title="A name given to the resource. Defined in DCMI Metadata Terms">Title</a>
-            </dt>
-            <dd><p>Design Uncertainty Annotations</p></dd>
-          </div>
-          <div>
-            <dt>
-              <a class="hover_property" href="http://www.w3.org/2002/07/owl#imports" title="The property that is used for importing other ontologies into a given ontology. Defined in The OWL 2 Schema vocabulary (OWL 2)">Imports</a>
-            </dt>
-            <dd>
-              <a href="https://w3id.org/design-uncertainty/core.ttl">du:core.ttl</a>
-            </dd>
-          </div>
         </dl>
       </div>
-      <div class="section" id="classes">
-        <h2>Classes</h2>
-        <h3 id="class-hierarchy">Class Hierarchy</h3>
+      <div id="concept-hierarchy">
+        <h2>Concept Hierarchy</h2>
         <div class="hierarchy">
           <ul class="hierarchy">
             <li>
-              <a href="#ActionVerb">Action Verb</a>
+              <a href="#nature_aleatory">Aleatory</a>
             </li>
             <li>
-              <a href="#Mitigation">Mitigation</a>
+              <a href="#verb_analyze">Analyze</a>
             </li>
             <li>
-              <a href="#Nature">Nature</a>
+              <a href="#phase_briefing-requirements">Briefing / Requirements</a>
             </li>
             <li>
-              <a href="#Object">Object</a>
+              <a href="#stakeholder_client-owner">Client / Owner</a>
             </li>
             <li>
-              <a href="#Phase">Phase</a>
+              <a href="#phase_construction-execution">Construction / Execution</a>
             </li>
             <li>
-              <a href="#Stakeholder">Stakeholder</a>
+              <a href="#stakeholder_contractors">Contractors</a>
             </li>
             <li>
-              <a href="#Uncertainty">Uncertainty</a>
+              <a href="#object_contracts-procurement">Contracts &amp; Procurement</a>
+            </li>
+            <li>
+              <a href="#U_T34">Controlled standardization</a>
+              <ul class="hierarchy">
+                <li>
+                  <a href="#U_T66">Process Standardization</a>
+                </li>
+                <li>
+                  <a href="#U_T65">Relying on well established methods</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#U_T30">Coordinate</a>
+              <ul class="hierarchy">
+                <li>
+                  <a href="#U_T44">Communication during constrution</a>
+                </li>
+                <li>
+                  <a href="#U_T46">Contractual &amp; Responsibility Alignment</a>
+                </li>
+                <li>
+                  <a href="#U_T41">Integrated design coordination</a>
+                </li>
+                <li>
+                  <a href="#U_T43">Multidisciplinary Involvement</a>
+                </li>
+                <li>
+                  <a href="#U_T42">Structured Client &amp; Brief Alignment</a>
+                </li>
+                <li>
+                  <a href="#U_T45">User involvement</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#verb_coordinate">Coordinate</a>
+            </li>
+            <li>
+              <a href="#object_decisions-governance">Decisions &amp; Governance</a>
+            </li>
+            <li>
+              <a href="#verb_define">Define</a>
+            </li>
+            <li>
+              <a href="#U_T31">Define ans formalize</a>
+              <ul class="hierarchy">
+                <li>
+                  <a href="#U_T47">Contractual formalization</a>
+                </li>
+                <li>
+                  <a href="#U_T48">Control through requirement structuring</a>
+                </li>
+                <li>
+                  <a href="#U_T49">Decision &amp; Change Governance</a>
+                </li>
+                <li>
+                  <a href="#U_T50">Set performance expectation</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#phase_design">Design</a>
+            </li>
+            <li>
+              <a href="#U_T03">Design process uncertainty</a>
+              <ul class="hierarchy">
+                <li>
+                  <a href="#U_T19">Delegation of executive/detail design to contractors</a>
+                </li>
+                <li>
+                  <a href="#U_T18">Interactive design process</a>
+                </li>
+                <li>
+                  <a href="#U_T17">Low quality / incomplete design deliverables at tender</a>
+                </li>
+                <li>
+                  <a href="#U_T14">Project uniqueness</a>
+                </li>
+                <li>
+                  <a href="#U_T16">Weak design management and design coordination</a>
+                </li>
+                <li>
+                  <a href="#U_T22">Working in parallel</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#U_T01">Design requirements uncertainty</a>
+              <ul class="hierarchy">
+                <li>
+                  <a href="#U_T11">Client decision instability</a>
+                </li>
+                <li>
+                  <a href="#U_T12">Missrepresented end user</a>
+                </li>
+                <li>
+                  <a href="#U_T27">Over-committed sales specifications</a>
+                </li>
+                <li>
+                  <a href="#U_T10">Unclear project objective and needs</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#object_design-solution-technical-definition">Design Solution &amp; Technical Definition</a>
+            </li>
+            <li>
+              <a href="#stakeholder_designers">Designers</a>
+            </li>
+            <li>
+              <a href="#stakeholder_end-users">End Users</a>
+            </li>
+            <li>
+              <a href="#nature_epistemic">Epistemic</a>
+            </li>
+            <li>
+              <a href="#U_T29">Evidence-based interpretation</a>
+              <ul class="hierarchy">
+                <li>
+                  <a href="#U_T40">Critical human judgement</a>
+                </li>
+                <li>
+                  <a href="#U_T37">Early stage contextual analysis</a>
+                  <ul class="hierarchy">
+                    <li>
+                      <a href="#U_T76">Technical quality control</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#U_T38">Market and User Evidence Analysis</a>
+                  <ul class="hierarchy">
+                    <li>
+                      <a href="#U_T77">Maintenance plan</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#U_T39">Trade-off Analysis</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#stakeholder_facility-managers-operators">Facility Managers / Operators</a>
+            </li>
+            <li>
+              <a href="#object_flexibility-reuse-circularity">Flexibility / Reuse / Circularity</a>
+            </li>
+            <li>
+              <a href="#U_T02">Flexibility and adaptability uncertainty</a>
+              <ul class="hierarchy">
+                <li>
+                  <a href="#U_T15">Uncertain future needs and uses</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#object_information-documentation">Information &amp; Documentation</a>
+            </li>
+            <li>
+              <a href="#U_T04">Information uncertainty</a>
+              <ul class="hierarchy">
+                <li>
+                  <a href="#U_T25">Designers’ limited understanding of construction methods</a>
+                </li>
+                <li>
+                  <a href="#U_T26">Insufficient data for quantitative decision-support models</a>
+                </li>
+                <li>
+                  <a href="#U_T28">Knowledge loss at handover</a>
+                </li>
+                <li>
+                  <a href="#U_T23">Missing or unreliable site and execution data</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#phase_initiation-feasibility">Initiation / Feasibility</a>
+            </li>
+            <li>
+              <a href="#stakeholder_market-actors">Market Actors</a>
+            </li>
+            <li>
+              <a href="#object_market-demand">Market demand</a>
+            </li>
+            <li>
+              <a href="#verb_model">Model</a>
+            </li>
+            <li>
+              <a href="#U_T05">Performance uncertainty</a>
+            </li>
+            <li>
+              <a href="#verb_plan">Plan</a>
+            </li>
+            <li>
+              <a href="#U_T33">Plan ahead</a>
+              <ul class="hierarchy">
+                <li>
+                  <a href="#U_T61">Early planning</a>
+                </li>
+                <li>
+                  <a href="#U_T57">Embedded Adaptability</a>
+                </li>
+                <li>
+                  <a href="#U_T59">Enable adaptation</a>
+                </li>
+                <li>
+                  <a href="#U_T58">Lifecycle &amp; Maintenance Anticipation</a>
+                </li>
+                <li>
+                  <a href="#U_T63">Proactive Information collection</a>
+                </li>
+                <li>
+                  <a href="#U_T62">Strategic Method &amp; Tool Planning</a>
+                </li>
+                <li>
+                  <a href="#U_T64">Supply chain planning</a>
+                </li>
+                <li>
+                  <a href="#U_T60">Technical Exhaustivenes</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#phase_post-project-organizational">Post-project / Organizational</a>
+            </li>
+            <li>
+              <a href="#U_T08">Project realization &amp; feasibility uncertainty</a>
+            </li>
+            <li>
+              <a href="#object_regulations">Regulations</a>
+            </li>
+            <li>
+              <a href="#stakeholder_regulators-authorities">Regulators / Authorities</a>
+            </li>
+            <li>
+              <a href="#U_T06">Regulatory uncertainty</a>
+              <ul class="hierarchy">
+                <li>
+                  <a href="#U_T09">Permitting timeline unpredictability</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#U_T32">Represent and simulate</a>
+              <ul class="hierarchy">
+                <li>
+                  <a href="#U_T55">Buisness plan</a>
+                </li>
+                <li>
+                  <a href="#U_T56">FM BIM</a>
+                </li>
+                <li>
+                  <a href="#U_T54">Probabalistic modeling</a>
+                </li>
+                <li>
+                  <a href="#U_T51">The use of BIM for design</a>
+                </li>
+                <li>
+                  <a href="#U_T53">Use Simulation and visualizations in the construction phase</a>
+                </li>
+                <li>
+                  <a href="#U_T52">Visualization for non experts (users)</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#object_requirements-brief">Requirements &amp; Brief</a>
+            </li>
+            <li>
+              <a href="#U_T07">Socio-economic &amp; market uncertainty</a>
+              <ul class="hierarchy">
+                <li>
+                  <a href="#U_T21">External shocks</a>
+                </li>
+                <li>
+                  <a href="#U_T13">Market volatility</a>
+                </li>
+                <li>
+                  <a href="#U_T20">Price volatility</a>
+                </li>
+                <li>
+                  <a href="#U_T24">Workforce availability, skill level, and turnover</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#verb_standardize">Standardize</a>
+            </li>
+            <li>
+              <a href="#nature_strategic">Strategic</a>
+            </li>
+            <li>
+              <a href="#object_supply-chain-logistics">Supply Chain &amp; Logistics</a>
+            </li>
+            <li>
+              <a href="#object_team-coordination-roles">Team &amp; Coordination Roles</a>
+            </li>
+            <li>
+              <a href="#phase_tender-contracting">Tender / Contracting</a>
+            </li>
+            <li>
+              <a href="#object_tools-models-bim-vr-sim">Tools &amp; Models (BIM/VR/Sim)</a>
+            </li>
+            <li>
+              <a href="#verb_track">Track</a>
+            </li>
+            <li>
+              <a href="#U_T35">Track and preserve information</a>
+              <ul class="hierarchy">
+                <li>
+                  <a href="#U_T72">Construction Progress Tracking</a>
+                </li>
+                <li>
+                  <a href="#U_T71">Design Traceability via Digital Models</a>
+                </li>
+                <li>
+                  <a href="#U_T68">Information documentation</a>
+                </li>
+                <li>
+                  <a href="#U_T67">Keep Organizational Knowledge</a>
+                </li>
+                <li>
+                  <a href="#U_T69">Organizational Asset Tracking for Reuse</a>
+                </li>
+                <li>
+                  <a href="#U_T70">Standardized Lifecycle Information Systems</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#phase_use-fm">Use / FM</a>
+            </li>
+            <li>
+              <a href="#object_users-demand">Users &amp; Demand</a>
+            </li>
+            <li>
+              <a href="#U_T36">Verification and validation</a>
+              <ul class="hierarchy">
+                <li>
+                  <a href="#U_T74">Compliance Checking</a>
+                </li>
+                <li>
+                  <a href="#U_T73">Partner Qualification</a>
+                </li>
+                <li>
+                  <a href="#U_T75">Performance-in-Use Validation</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#verb_verify">Verify</a>
             </li>
           </ul>
         </div>
-        <h3 id="class-definitions">Class Definitions</h3>
-        <div class="property entity" id="ActionVerb">
-          <h3>Action Verb
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>https://w3id.org/design-uncertainty/ActionVerb</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="https://w3id.org/design-uncertainty/requiresAction">requires action</a>
-                  <sup class="sup-p" title="RDF Property">p</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="Mitigation">
-          <h3>Mitigation
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>https://w3id.org/design-uncertainty/Mitigation</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
-              </th>
-              <td>
-                <ul class="pylodelitlist">
-                  <li>
-                    <span>
-                      <a href="https://w3id.org/design-uncertainty/addressesObject_m">addresses object</a>
-                      <sup class="sup-p" title="RDF Property">p</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="https://w3id.org/design-uncertainty/performedByStakeholder">performed by stakeholder</a>
-                      <sup class="sup-p" title="RDF Property">p</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="https://w3id.org/design-uncertainty/performedInPhase">performed in phase</a>
-                      <sup class="sup-p" title="RDF Property">p</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="https://w3id.org/design-uncertainty/requiresAction">requires action</a>
-                      <sup class="sup-p" title="RDF Property">p</sup>
-                    </span>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="Nature">
-          <h3>Nature
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>https://w3id.org/design-uncertainty/Nature</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-              </th>
-              <td>
-                <span>
-                  <a href="https://w3id.org/design-uncertainty/IsOfNature">is of nature</a>
-                  <sup class="sup-p" title="RDF Property">p</sup>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="Object">
-          <h3>Object
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>https://w3id.org/design-uncertainty/Object</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-              </th>
-              <td>
-                <ul class="pylodelitlist">
-                  <li>
-                    <span>
-                      <a href="https://w3id.org/design-uncertainty/addressesObject">addresses object</a>
-                      <sup class="sup-p" title="RDF Property">p</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="https://w3id.org/design-uncertainty/addressesObject_m">addresses object</a>
-                      <sup class="sup-p" title="RDF Property">p</sup>
-                    </span>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="Phase">
-          <h3>Phase
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>https://w3id.org/design-uncertainty/Phase</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-              </th>
-              <td>
-                <ul class="pylodelitlist">
-                  <li>
-                    <span>
-                      <a href="https://w3id.org/design-uncertainty/emergesInPhase">emerges in phase</a>
-                      <sup class="sup-p" title="RDF Property">p</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="https://w3id.org/design-uncertainty/performedInPhase">performed in phase</a>
-                      <sup class="sup-p" title="RDF Property">p</sup>
-                    </span>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="Stakeholder">
-          <h3>Stakeholder
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>https://w3id.org/design-uncertainty/Stakeholder</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-              </th>
-              <td>
-                <ul class="pylodelitlist">
-                  <li>
-                    <span>
-                      <a href="https://w3id.org/design-uncertainty/introducedBy">introduced by</a>
-                      <sup class="sup-p" title="RDF Property">p</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="https://w3id.org/design-uncertainty/performedByStakeholder">performed by stakeholder</a>
-                      <sup class="sup-p" title="RDF Property">p</sup>
-                    </span>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="Uncertainty">
-          <h3>Uncertainty
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>https://w3id.org/design-uncertainty/Uncertainty</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
-              </th>
-              <td>
-                <ul class="pylodelitlist">
-                  <li>
-                    <span>
-                      <a href="https://w3id.org/design-uncertainty/IsOfNature">is of nature</a>
-                      <sup class="sup-p" title="RDF Property">p</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="https://w3id.org/design-uncertainty/addressesObject">addresses object</a>
-                      <sup class="sup-p" title="RDF Property">p</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="https://w3id.org/design-uncertainty/emergesInPhase">emerges in phase</a>
-                      <sup class="sup-p" title="RDF Property">p</sup>
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <a href="https://w3id.org/design-uncertainty/introducedBy">introduced by</a>
-                      <sup class="sup-p" title="RDF Property">p</sup>
-                    </span>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-          </table>
-        </div>
       </div>
-      <div class="section" id="properties">
-        <h2>Properties</h2>
-        <div class="property entity" id="isofnature">
-          <h3>is of nature
-            <sup class="sup-p" title="RDF Property">p</sup>
-          </h3>
+      <div id="concepts">
+        <h2>Concept Definitions</h2>
+        <div class="entity">
+          <h3 id="du_nature_aleatory">Aleatory</h3>
           <table>
             <tr>
-              <th>IRI</th>
-              <td>
-                <code>https://w3id.org/design-uncertainty/IsOfNature</code>
+              <td style="width:250px;">
+                <strong>IRI</strong>
               </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
               <td>
-                <span>
-                  <a href="https://w3id.org/design-uncertainty/Uncertainty">du:Uncertainty</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="https://w3id.org/design-uncertainty/Nature">du:Nature</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
+                <code>https://w3id.org/design-uncertainty/nature_aleatory</code>
               </td>
             </tr>
           </table>
         </div>
-        <div class="property entity" id="addressesobject">
-          <h3>addresses object
-            <sup class="sup-p" title="RDF Property">p</sup>
-          </h3>
+        <div class="entity">
+          <h3 id="du_verb_analyze">Analyze</h3>
           <table>
             <tr>
-              <th>IRI</th>
-              <td>
-                <code>https://w3id.org/design-uncertainty/addressesObject</code>
+              <td style="width:250px;">
+                <strong>IRI</strong>
               </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
               <td>
-                <span>
-                  <a href="https://w3id.org/design-uncertainty/Uncertainty">du:Uncertainty</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="https://w3id.org/design-uncertainty/Object">du:Object</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
+                <code>https://w3id.org/design-uncertainty/verb_analyze</code>
               </td>
             </tr>
           </table>
         </div>
-        <div class="property entity" id="addressesObject_m">
-          <h3>addresses object
-            <sup class="sup-p" title="RDF Property">p</sup>
-          </h3>
+        <div class="entity">
+          <h3 id="du_phase_briefing-requirements">Briefing / Requirements</h3>
           <table>
             <tr>
-              <th>IRI</th>
-              <td>
-                <code>https://w3id.org/design-uncertainty/addressesObject_m</code>
+              <td style="width:250px;">
+                <strong>IRI</strong>
               </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
               <td>
-                <span>
-                  <a href="https://w3id.org/design-uncertainty/Mitigation">du:Mitigation</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="https://w3id.org/design-uncertainty/Object">du:Object</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
+                <code>https://w3id.org/design-uncertainty/phase_briefing-requirements</code>
               </td>
             </tr>
           </table>
         </div>
-        <div class="property entity" id="emergesinphase">
-          <h3>emerges in phase
-            <sup class="sup-p" title="RDF Property">p</sup>
-          </h3>
+        <div class="entity">
+          <h3 id="du_U_T55">Buisness plan</h3>
           <table>
             <tr>
-              <th>IRI</th>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
               <td>
-                <code>https://w3id.org/design-uncertainty/emergesInPhase</code>
+                <code>https://w3id.org/design-uncertainty/U_T55</code>
               </td>
             </tr>
             <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
               <td>
-                <span>
-                  <a href="https://w3id.org/design-uncertainty/Uncertainty">du:Uncertainty</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
               </td>
+              <td>A mitigation instance that reduces uncertainty by modeling financial viability and return expectations before design commitments are made.</td>
             </tr>
             <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
               <td>
-                <span>
-                  <a href="https://w3id.org/design-uncertainty/Phase">du:Phase</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T32">Represent and simulate</a>
               </td>
             </tr>
           </table>
         </div>
-        <div class="property entity" id="introducedby">
-          <h3>introduced by
-            <sup class="sup-p" title="RDF Property">p</sup>
-          </h3>
+        <div class="entity">
+          <h3 id="du_stakeholder_client-owner">Client / Owner</h3>
           <table>
             <tr>
-              <th>IRI</th>
-              <td>
-                <code>https://w3id.org/design-uncertainty/introducedBy</code>
+              <td style="width:250px;">
+                <strong>IRI</strong>
               </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
               <td>
-                <span>
-                  <a href="https://w3id.org/design-uncertainty/Uncertainty">du:Uncertainty</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <span>
-                  <a href="https://w3id.org/design-uncertainty/Stakeholder">du:Stakeholder</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
+                <code>https://w3id.org/design-uncertainty/stakeholder_client-owner</code>
               </td>
             </tr>
           </table>
         </div>
-        <div class="property entity" id="performedbystakeholder">
-          <h3>performed by stakeholder
-            <sup class="sup-p" title="RDF Property">p</sup>
-          </h3>
+        <div class="entity">
+          <h3 id="du_U_T11">Client decision instability</h3>
           <table>
             <tr>
-              <th>IRI</th>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
               <td>
-                <code>https://w3id.org/design-uncertainty/performedByStakeholder</code>
+                <code>https://w3id.org/design-uncertainty/U_T11</code>
               </td>
             </tr>
             <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
               <td>
-                <span>
-                  <a href="https://w3id.org/design-uncertainty/Mitigation">du:Mitigation</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
               </td>
+              <td>Uncertainty arising when client decisions change unpredictably over time, sometimes because of misunderstood approved designs or requirements, leading to late corrections and change requests.</td>
             </tr>
             <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
               <td>
-                <span>
-                  <a href="https://w3id.org/design-uncertainty/Stakeholder">du:Stakeholder</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T01">Design requirements uncertainty</a>
               </td>
             </tr>
           </table>
         </div>
-        <div class="property entity" id="performedinphase">
-          <h3>performed in phase
-            <sup class="sup-p" title="RDF Property">p</sup>
-          </h3>
+        <div class="entity">
+          <h3 id="du_U_T44">Communication during constrution</h3>
           <table>
             <tr>
-              <th>IRI</th>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
               <td>
-                <code>https://w3id.org/design-uncertainty/performedInPhase</code>
+                <code>https://w3id.org/design-uncertainty/U_T44</code>
               </td>
             </tr>
             <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
               <td>
-                <span>
-                  <a href="https://w3id.org/design-uncertainty/Mitigation">du:Mitigation</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
               </td>
+              <td>A mitigation strategy that reduces uncertainty during execution by formalizing communication channels and coordination roles on site, ensuring structured information flow and decision control.</td>
             </tr>
             <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
               <td>
-                <span>
-                  <a href="https://w3id.org/design-uncertainty/Phase">du:Phase</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T30">Coordinate</a>
               </td>
             </tr>
           </table>
         </div>
-        <div class="property entity" id="requiresaction">
-          <h3>requires action
-            <sup class="sup-p" title="RDF Property">p</sup>
-          </h3>
+        <div class="entity">
+          <h3 id="du_U_T74">Compliance Checking</h3>
           <table>
             <tr>
-              <th>IRI</th>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
               <td>
-                <code>https://w3id.org/design-uncertainty/requiresAction</code>
+                <code>https://w3id.org/design-uncertainty/U_T74</code>
               </td>
             </tr>
             <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
               <td>
-                <span>
-                  <a href="https://w3id.org/design-uncertainty/Mitigation">du:Mitigation</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty by systematically verifying that design outputs comply with agreed requirements, specifications, and regulatory frameworks before tendering or execution, preventing deviations and late compliance-related surprises.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T36">Verification and validation</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_phase_construction-execution">Construction / Execution</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/phase_construction-execution</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T72">Construction Progress Tracking</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T72</code>
               </td>
             </tr>
             <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
               <td>
-                <span>
-                  <a href="https://w3id.org/design-uncertainty/ActionVerb">du:ActionVerb</a>
-                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-                </span>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty by systematically monitoring and documenting construction progress, approvals, and open issues through structured reporting and supervision mechanisms.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T35">Track and preserve information</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_stakeholder_contractors">Contractors</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/stakeholder_contractors</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_object_contracts-procurement">Contracts &amp; Procurement</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/object_contracts-procurement</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T46">Contractual &amp; Responsibility Alignment</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T46</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation strategy that reduces uncertainty by formally aligning roles, responsibilities, incentives, and long-term obligations between contractual actors (e.g., developers, designers, contractors, operators).</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T30">Coordinate</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T47">Contractual formalization</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T47</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty by explicitly defining selection criteria, contractual scope, roles, responsibilities, and performance obligations within contracting frameworks.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T31">Define ans formalize</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T48">Control through requirement structuring</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T48</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty by explicitly structuring requirements during briefing, translating constraints, sustainability criteria, and known parameters into a stable and enforceable design brief.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T31">Define ans formalize</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T34">Controlled standardization</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T34</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation strategy that reduces uncertainty by predefining technologies, documentation, and processes, relying on consolidated, repeatable, and well-understood practices, while confining experimentation to explicitly controlled areas.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#narrower" title="Relates a concept to a concept that is more specific in meaning.">Has Narrower</a>
+              </td>
+              <td>
+                <a href="#du_U_T66">Process Standardization</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T30">Coordinate</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T30</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation strategy that reduces uncertainty by aligning actors, roles, and interpretations so that decisions and information remain coherent across project phases.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#narrower" title="Relates a concept to a concept that is more specific in meaning.">Has Narrower</a>
+              </td>
+              <td>
+                <a href="#du_U_T46">Contractual &amp; Responsibility Alignment</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_verb_coordinate">Coordinate</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/verb_coordinate</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T40">Critical human judgement</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T40</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty by relying on critical human judgment to recognize, interpret, and correct issues that automated tools may miss, rather than depending solely on technical systems</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T29">Evidence-based interpretation</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T49">Decision &amp; Change Governance</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T49</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty by formalizing decision authority, defining acceptable change ranges, and explicitly quantifying uncertainty levels, thereby preventing uncontrolled ambiguity and escalation across project stages.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T31">Define ans formalize</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_object_decisions-governance">Decisions &amp; Governance</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/object_decisions-governance</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_verb_define">Define</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/verb_define</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T31">Define ans formalize</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T31</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation strategy that reduces uncertainty by explicitly fixing reference points, boundaries, and decision criteri such as requirements, scopes, roles, thresholds, and contractual conditions so that ambiguity does not propagate across project phases.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#narrower" title="Relates a concept to a concept that is more specific in meaning.">Has Narrower</a>
+              </td>
+              <td>
+                <a href="#du_U_T50">Set performance expectation</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T19">Delegation of executive/detail design to contractors</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T19</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty arising when substantial portions of detailing and executive design are left to contractors (or depend on contractor shop drawings), reducing designer control.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T03">Design process uncertainty</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_phase_design">Design</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/phase_design</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_object_design-solution-technical-definition">Design Solution &amp; Technical Definition</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/object_design-solution-technical-definition</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T71">Design Traceability via Digital Models</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T71</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty by maintaining a traceable digital record of design evolution and changes (e.g., via BIM), ensuring continuity and clarity during handovers across actors and phases.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T35">Track and preserve information</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T03">Design process uncertainty</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T03</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty arising from the iterative and evolving nature of the design process, including coordination between stakeholders and systems,  and changes in decisions.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#narrower" title="Relates a concept to a concept that is more specific in meaning.">Has Narrower</a>
+              </td>
+              <td>
+                <a href="#du_U_T22">Working in parallel</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T01">Design requirements uncertainty</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T01</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty arising from unclear or incomplete user requirements.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#narrower" title="Relates a concept to a concept that is more specific in meaning.">Has Narrower</a>
+              </td>
+              <td>
+                <a href="#du_U_T27">Over-committed sales specifications</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_stakeholder_designers">Designers</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/stakeholder_designers</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T25">Designers’ limited understanding of construction methods</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T25</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty arising when designers lack sufficient understanding of construction methods, site constraints, and execution realities, leading to design assumptions that prove infeasible or risky during construction.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T04">Information uncertainty</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T61">Early planning</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T61</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty by allocating structured time and analytical effort during early programming to clarify scope and optimize decisions before formal commitments.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T33">Plan ahead</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T37">Early stage contextual analysis</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T37</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty by grounding decisions in detailed analysis of existing physical, historical, environmental, and regulatory conditions, ensuring that design and feasibility judgments are based on verified contextual evidence rather than assumptions.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T29">Evidence-based interpretation</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#narrower" title="Relates a concept to a concept that is more specific in meaning.">Has Narrower</a>
+              </td>
+              <td>
+                <a href="#du_U_T76">Technical quality control</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T57">Embedded Adaptability</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T57</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty by embedding capacity for transformation, reuse, and evolution directly into spatial, technical, and material systems at the design stage, so that future change can occur without disruptive intervention.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T33">Plan ahead</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T59">Enable adaptation</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T59</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces adaptability uncertainty during the use phase by enabling reversible reconfiguration, refurbishment, and layout changes without structural intervention.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T33">Plan ahead</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_stakeholder_end-users">End Users</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/stakeholder_end-users</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_nature_epistemic">Epistemic</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/nature_epistemic</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T29">Evidence-based interpretation</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T29</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation strategy that reduces uncertainty by systematically interpreting empirical, contextual, and comparative evidence, rather than assumptions, to inform decisions about requirements, design solutions, and performance.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#narrower" title="Relates a concept to a concept that is more specific in meaning.">Has Narrower</a>
+              </td>
+              <td>
+                <a href="#du_U_T38">Market and User Evidence Analysis</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T21">External shocks</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T21</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty arising from unforeseen systemic events, such as pandemics, wars, labor shortages, or contractor suspension, that disrupt markets and institutions, affecting workforce availability, contractor continuity, costs, and schedules.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T07">Socio-economic &amp; market uncertainty</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T56">FM BIM</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T56</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Reduces performance uncertainty by using BIM as a long-term digital repository for facility management, enabling accurate, up-to-date knowledge of systems, components, and maintenance needs throughout the building’s operational life</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T32">Represent and simulate</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_stakeholder_facility-managers-operators">Facility Managers / Operators</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/stakeholder_facility-managers-operators</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_object_flexibility-reuse-circularity">Flexibility / Reuse / Circularity</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/object_flexibility-reuse-circularity</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T02">Flexibility and adaptability uncertainty</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T02</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty related to a building’s ability to accommodate future changes or adapt to evolving needs, technologies, or external conditions over time.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#narrower" title="Relates a concept to a concept that is more specific in meaning.">Has Narrower</a>
+              </td>
+              <td>
+                <a href="#du_U_T15">Uncertain future needs and uses</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_object_information-documentation">Information &amp; Documentation</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/object_information-documentation</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T68">Information documentation</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T68</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty by progressively collecting, structuring, and validating baseline documentation and contextual knowledge starting from early project phases to avoid informational gaps later.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T35">Track and preserve information</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T04">Information uncertainty</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T04</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty arising from incomplete, inaccurate, or inconsistently represented information,  particularly due to the processes and models used to represent reality for design decisions, including assumptions, simplifications, and uncertain input parameters.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#narrower" title="Relates a concept to a concept that is more specific in meaning.">Has Narrower</a>
+              </td>
+              <td>
+                <a href="#du_U_T28">Knowledge loss at handover</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_phase_initiation-feasibility">Initiation / Feasibility</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/phase_initiation-feasibility</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T26">Insufficient data for quantitative decision-support models</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T26</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty arising when quantitative models (e.g.  LCA, performance models) rely on input parameters that are unavailable, or highly uncertain. Including the lack of urban-scale information for reliable environmental performance predictions.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T04">Information uncertainty</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T41">Integrated design coordination</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T41</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation strategy that reduces uncertainty by structurally integrating design and construction expertise through centralized leadership, early contractor involvement, and unified organizational responsibility.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T30">Coordinate</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T18">Interactive design process</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T18</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty arising from iterative “ping-pong” negotiation between disciplines, requiring compromises between the vision and whether it is technically/contractually feasible.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T03">Design process uncertainty</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T67">Keep Organizational Knowledge</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T67</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty by capturing, updating, and reusing institutional knowledge, regulatory learning, project experience, and performance records over time to support future decision-making and actor selection.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T35">Track and preserve information</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T28">Knowledge loss at handover</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T28</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty caused by the loss of tacit and explicit knowledge when the design and engineering team leaves after completion, leaving operations and facility management without access to critical project infotmation.  Operations and maintenance rely on outdated, incomplete, or unreliable as-built information, particularly in existing buildings with undocumented modifications over time.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T04">Information uncertainty</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T58">Lifecycle &amp; Maintenance Anticipation</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T58</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces performance uncertainty by anticipating degradation, operational demands, failure risk, and lifecycle impacts, embedding maintenance logic, energy strategy, and durability considerations into long-term planning.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T33">Plan ahead</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T17">Low quality / incomplete design deliverables at tender</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T17</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty arising from design outputs that are incomplete, under-specified, or not executable at tender time, which shifts unresolved decisions into execution.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T03">Design process uncertainty</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T77">Maintenance plan</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T77</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty by verifying maintenance actions for feasibility, durability, and interference with design intent before implementation.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T38">Market and User Evidence Analysis</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_stakeholder_market-actors">Market Actors</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/stakeholder_market-actors</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T38">Market and User Evidence Analysis</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T38</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty by systematically analyzing observed, measured, or comparable user and market behavior to validate assumptions about requirements, spatial performance, and commercial viability.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T29">Evidence-based interpretation</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#narrower" title="Relates a concept to a concept that is more specific in meaning.">Has Narrower</a>
+              </td>
+              <td>
+                <a href="#du_U_T77">Maintenance plan</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_object_market-demand">Market demand</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/object_market-demand</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T13">Market volatility</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T13</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty arising from shifting market conditions (demand, expectations, price volatility, sector trends) that force changes in targets, specifications.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T07">Socio-economic &amp; market uncertainty</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T23">Missing or unreliable site and execution data</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T23</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty arising from missing, late, or improperly collected information during construction (e.g., existing conditions, quantities, or as-built data), limiting reliable control over execution.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T04">Information uncertainty</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T12">Missrepresented end user</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T12</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty arising when a developer/brand defines requirements on behalf of an unknown or absent end user, and later end-user involvement triggers significant requirement changes.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T01">Design requirements uncertainty</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_verb_model">Model</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/verb_model</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T43">Multidisciplinary Involvement</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T43</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation strategy that reduces uncertainty by coordinating multidisciplinary expertise early in feasibility stages to interpret constraints and align technical understanding before design decisions are fixed, including technical coordination between different tools.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T30">Coordinate</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T69">Organizational Asset Tracking for Reuse</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T69</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty by systematically recording, tracking, and evaluating reusable furniture and components, enabling informed decisions about reuse, adaptation, or replacement during design and refurbishment</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T35">Track and preserve information</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T27">Over-committed sales specifications</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T27</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty arising when marketing or sales teams commit to features or specifications without prior technical, regulatory, or economic validation, forcing the project team to resolve infeasible or unrealistic promises after contracts are signed.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T01">Design requirements uncertainty</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T73">Partner Qualification</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T73</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty by verifying the competence, qualifications, and organizational capability of contractors and design teams before engagement or tender award.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T36">Verification and validation</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T05">Performance uncertainty</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T05</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty about how the building will perform over time in real conditions, including degradation, changing performance expectations, and gaps between predicted and actual performance.</td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T75">Performance-in-Use Validation</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T75</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty by verifying actual spatial or operational performance in use and adjusting assumptions or requirements accordingly.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T36">Verification and validation</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T09">Permitting timeline unpredictability</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T09</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty about the timing and conditions of permits, including late or changing authority demands.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T06">Regulatory uncertainty</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_verb_plan">Plan</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/verb_plan</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T33">Plan ahead</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T33</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation strategy that reduces uncertainty by anticipating future conditions, transformations, and operational demands during early decision-making, and embedding these expectations into design, technical systems, contracts, and operational strategies so that change, degradation, and evolution can occur without disruptive intervention.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#narrower" title="Relates a concept to a concept that is more specific in meaning.">Has Narrower</a>
+              </td>
+              <td>
+                <a href="#du_U_T64">Supply chain planning</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_phase_post-project-organizational">Post-project / Organizational</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/phase_post-project-organizational</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T20">Price volatility</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T20</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty arising from market-driven price volatility and the time gap between estimating, procuring, and installing materials/components, which creates cost revision risk and can trigger scope/budget changes.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T07">Socio-economic &amp; market uncertainty</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T63">Proactive Information collection</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T63</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty by proactively identifying future information needs and relevant actors early in the project lifecycle.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T33">Plan ahead</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T54">Probabalistic modeling</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T54</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Mitigates uncertainty by mathematically quantifying the effects of uncertain inputs through probabilistic simulation, producing ranges and confidence intervals rather than single deterministic results</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T32">Represent and simulate</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T66">Process Standardization</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T66</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty by structuring documentation, workflows, and organizational processes into replicable, predictable, and transparent frameworks that guide project development over time.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T34">Controlled standardization</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T08">Project realization &amp; feasibility uncertainty</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T08</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty about whether and when a project can be delivered as intended due to viability, funding, or dependence on external enabling conditions (e.g., infrastructure capacity and connections).</td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T14">Project uniqueness</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T14</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty arising from the non-repeatable nature of design work, where requirements cannot be deterministically mapped to solutions and must be continuously interpreted and negotiated during the process, especially with the client.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T03">Design process uncertainty</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_object_regulations">Regulations</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/object_regulations</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_stakeholder_regulators-authorities">Regulators / Authorities</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/stakeholder_regulators-authorities</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T06">Regulatory uncertainty</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T06</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty arising from statutory requirements, permitting and approvals, interpretation differences, and changes in regulations that constrain design decisions and timelines.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#narrower" title="Relates a concept to a concept that is more specific in meaning.">Has Narrower</a>
+              </td>
+              <td>
+                <a href="#du_U_T09">Permitting timeline unpredictability</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T65">Relying on well established methods</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T65</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty by limiting experimentation in technical and constructive choices, relying on consolidated solutions and selectively allowing innovation only within controlled boundaries.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T34">Controlled standardization</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T32">Represent and simulate</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T32</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation strategy that reduces uncertainty by constructing explicit representations, often using digital technologies, that make future states, constraints, and consequences visible, explorable, and comparable, without requiring immediate commitment.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#narrower" title="Relates a concept to a concept that is more specific in meaning.">Has Narrower</a>
+              </td>
+              <td>
+                <a href="#du_U_T56">FM BIM</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_object_requirements-brief">Requirements &amp; Brief</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/object_requirements-brief</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T50">Set performance expectation</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T50</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Reduces performance uncertainty by using sustainability certifications (e.g. LEED) as market signals that shape expectations, attract tenants, and justify performance-related investments</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T31">Define ans formalize</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T07">Socio-economic &amp; market uncertainty</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T07</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty arising from external economic, market, fiscal, geopolitical, and price/availability conditions that affect costs, demand, and project constraints over time.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#narrower" title="Relates a concept to a concept that is more specific in meaning.">Has Narrower</a>
+              </td>
+              <td>
+                <a href="#du_U_T24">Workforce availability, skill level, and turnover</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_verb_standardize">Standardize</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/verb_standardize</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T70">Standardized Lifecycle Information Systems</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T70</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty by providing standardized, structured lifecycle information (e.g., Digital Product Passports) about materials and components, supporting circular design and end-of-life decision-making.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T35">Track and preserve information</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_nature_strategic">Strategic</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/nature_strategic</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T62">Strategic Method &amp; Tool Planning</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T62</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty by deliberately selecting appropriate tools and workflows (e.g., CAD vs. BIM) based on project characteristics such as speed and non-standard conditions.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T33">Plan ahead</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T42">Structured Client &amp; Brief Alignment</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T42</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation strategy that reduces uncertainty by actively coordinating with clients through iterative dialogue, translation of aspirations into measurable parameters, and tailored communication to build a shared and stable brief.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T30">Coordinate</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_object_supply-chain-logistics">Supply Chain &amp; Logistics</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/object_supply-chain-logistics</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T64">Supply chain planning</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T64</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces construction uncertainty by planning sourcing, transport timing, and logistics to stabilize cost and schedule risks.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T33">Plan ahead</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_object_team-coordination-roles">Team &amp; Coordination Roles</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/object_team-coordination-roles</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T60">Technical Exhaustivenes</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T60</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty by detailed technical resolution, ensuring robustness, and completeness of design solutions.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T33">Plan ahead</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T76">Technical quality control</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T76</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty by verifying execution quality against detailed technical drawings and approved samples to ensure fidelity between design intent and built outcome.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T37">Early stage contextual analysis</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_phase_tender-contracting">Tender / Contracting</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/phase_tender-contracting</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T51">The use of BIM for design</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T51</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty by developing and managing structured digital design models (e.g., BIM), enabling clearer visualization, consistency across repetitive elements, traceability of information responsibility, and greater predictability of the final outcome.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T32">Represent and simulate</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_object_tools-models-bim-vr-sim">Tools &amp; Models (BIM/VR/Sim)</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/object_tools-models-bim-vr-sim</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_verb_track">Track</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/verb_track</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T35">Track and preserve information</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T35</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation strategy that reduces uncertainty by systematically recording, updating, and preserving information, decisions, and experience over time, ensuring traceability, continuity, and reuse of knowledge across project phases, actors, and lifecycle stages.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#narrower" title="Relates a concept to a concept that is more specific in meaning.">Has Narrower</a>
+              </td>
+              <td>
+                <a href="#du_U_T72">Construction Progress Tracking</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T39">Trade-off Analysis</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T39</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces design uncertainty by analyzing internal technical criteria (performance, cost, materials, aesthetics) during design to balance trade-offs</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T29">Evidence-based interpretation</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T15">Uncertain future needs and uses</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T15</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty arising from the inability to predict how building uses, functional requirements, and technologies will evolve over the long operational life of the building, which affects early decisions on systems zoning, service distribution, and maintainability.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T02">Flexibility and adaptability uncertainty</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T10">Unclear project objective and needs</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T10</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty arising when users/clients cannot clearly articulate needs, or from insufficient baseline data about users, demand, and context (e.g., behaviors, needs, projections), reducing confidence in requirement-setting and making the brief incomplete and unstable.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T01">Design requirements uncertainty</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_phase_use-fm">Use / FM</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/phase_use-fm</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T53">Use Simulation and visualizations in the construction phase</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T53</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty during construction by using digital representations and simulations (e.g., point clouds, 4D sequencing, AR/VR site inspection) to anticipate constraints, visualize site conditions, and improve coordination before and during execution.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T32">Represent and simulate</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T45">User involvement</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T45</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation strategy that reduces uncertainty by directly involving users and stakeholders in the requirements phase to surface operational realities and avoid late-stage revisions.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T30">Coordinate</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_object_users-demand">Users &amp; Demand</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/object_users-demand</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T36">Verification and validation</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T36</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation strategy that reduces uncertainty by systematically checking decisions, actors, designs, and outcomes against explicit criteria, evidence, or reference standards, identifying mismatches early and preventing unverified assumptions from propagating across project phases.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#narrower" title="Relates a concept to a concept that is more specific in meaning.">Has Narrower</a>
+              </td>
+              <td>
+                <a href="#du_U_T75">Performance-in-Use Validation</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_verb_verify">Verify</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/verb_verify</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T52">Visualization for non experts (users)</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T52</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>A mitigation instance that reduces uncertainty by using visual and immersive representations (e.g., renders, VR) to make design intent accessible to clients and non-experts, enabling informed questioning, clarification, and decision-making during briefing.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T32">Represent and simulate</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T16">Weak design management and design coordination</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T16</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty arising when design leadership, coordination, and multidisciplinary integration are insufficient</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T03">Design process uncertainty</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T24">Workforce availability, skill level, and turnover</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T24</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty arising from variability in workforce availability, experience, and skill levels on site, which affects productivity, quality, and schedule reliability.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T07">Socio-economic &amp; market uncertainty</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="entity">
+          <h3 id="du_U_T22">Working in parallel</h3>
+          <table>
+            <tr>
+              <td style="width:250px;">
+                <strong>IRI</strong>
+              </td>
+              <td>
+                <code>https://w3id.org/design-uncertainty/U_T22</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://schema.org/description" title="A description of the item.">Description</a>
+              </td>
+              <td>Uncertainty arising from overlapping design, approval, and construction activities in parallel, where unresolved decisions propagate downstream and amplify changes, claims, and rework.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.w3.org/2004/02/skos/core#broader" title="Relates a concept to a concept that is more general in meaning.">Has Broader</a>
+              </td>
+              <td>
+                <a href="#du_U_T03">Design process uncertainty</a>
               </td>
             </tr>
           </table>
@@ -921,23 +3289,6 @@
           </dd>
         </dl>
       </div>
-      <div id="legend">
-        <h2>Legend</h2>
-        <table class="entity">
-          <tr>
-            <td>
-              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-            </td>
-            <td>Classes</td>
-          </tr>
-          <tr>
-            <td>
-              <sup class="sup-p" title="RDF Property">p</sup>
-            </td>
-            <td>Properties</td>
-          </tr>
-        </table>
-      </div>
     </div>
     <div id="pylode">
       <p>made by 
@@ -948,7 +3299,7 @@
         </a>
         <a href="https://github.com/rdflib/pyLODE/release/3.5.1" id="version">3.5.1</a>
         <span> with the </span>
-        <a href="https://linked.data.gov.au/def/ontpub" id="profile">OntPub</a>
+        <a href="https://linked.data.gov.au/def/vocpub" id="profile">VocPub</a>
         <span>profile</span>
       </p>
     </div>
@@ -962,68 +3313,13 @@
         </li>
         <li>
           <h4>
-            <a href="#classes">Classes</a>
+            <a href="#concept-hierarchy">Concepts Hierarchy</a>
           </h4>
-          <h5>
-            <a href="#class-hierarchy" style="margin-left:10px;">Class Hierarchy</a>
-          </h5>
-          <h5>
-            <a href="#class-definitions" style="margin-left:10px;">Class Definitions</a>
-          </h5>
-          <ul class="second">
-            <li style="margin-left:10px;">
-              <a href="#ActionVerb">Action Verb</a>
-            </li>
-            <li style="margin-left:10px;">
-              <a href="#Mitigation">Mitigation</a>
-            </li>
-            <li style="margin-left:10px;">
-              <a href="#Nature">Nature</a>
-            </li>
-            <li style="margin-left:10px;">
-              <a href="#Object">Object</a>
-            </li>
-            <li style="margin-left:10px;">
-              <a href="#Phase">Phase</a>
-            </li>
-            <li style="margin-left:10px;">
-              <a href="#Stakeholder">Stakeholder</a>
-            </li>
-            <li style="margin-left:10px;">
-              <a href="#Uncertainty">Uncertainty</a>
-            </li>
-          </ul>
         </li>
         <li>
           <h4>
-            <a href="#properties">Properties</a>
+            <a href="#concepts">Concept Definitions</a>
           </h4>
-          <ul class="second">
-            <li>
-              <a href="#isofnature">is of nature</a>
-            </li>
-            <li>
-              <a href="#addressesobject">addresses object</a>
-            </li>
-            <li>
-              <a href="#addressesObject_m">addresses object</a>
-            </li>
-            <li>
-              <a href="#emergesinphase">emerges in phase</a>
-            </li>
-            <li>
-              <a href="#introducedby">introduced by</a>
-            </li>
-            <li>
-              <a href="#performedbystakeholder">performed by stakeholder</a>
-            </li>
-            <li>
-              <a href="#performedinphase">performed in phase</a>
-            </li>
-            <li>
-              <a href="#requiresaction">requires action</a>
-            </li>
-          </ul>
         </li>
         <li>
           <h4>
