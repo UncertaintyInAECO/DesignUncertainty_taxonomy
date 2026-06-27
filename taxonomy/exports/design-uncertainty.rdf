@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dct="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T09">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Permitting timeline unpredictability</skos:prefLabel>
+    <skos:definition>Uncertainty about the timing and conditions of permits, including late or changing authority demands.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T06"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T14">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Project uniqueness</skos:prefLabel>
+    <skos:definition>Uncertainty arising from the non-repeatable nature of design work, where requirements cannot be deterministically mapped to solutions and must be continuously interpreted and negotiated during the process, especially with the client.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T03"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T70">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Standardized Lifecycle Information Systems</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by providing standardized, structured lifecycle information (e.g., Digital Product Passports) about materials and components, supporting circular design and end-of-life decision-making.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T35"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T13">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Market volatility</skos:prefLabel>
+    <skos:definition>Uncertainty arising from shifting market conditions (demand, expectations, price volatility, sector trends) that force changes in targets, specifications.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T07"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T66">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Process Standardization</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by structuring documentation, workflows, and organizational processes into replicable, predictable, and transparent frameworks that guide project development over time.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T34"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T35">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Track and preserve information</skos:prefLabel>
+    <skos:definition>A mitigation strategy that reduces uncertainty by systematically recording, updating, and preserving information, decisions, and experience over time, ensuring traceability, continuity, and reuse of knowledge across project phases, actors, and lifecycle stages.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/Mitigation"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T67"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T68"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T69"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T70"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T71"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T72"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T31">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Define ans formalize</skos:prefLabel>
+    <skos:definition>A mitigation strategy that reduces uncertainty by explicitly fixing reference points, boundaries, and decision criteri such as requirements, scopes, roles, thresholds, and contractual conditions so that ambiguity does not propagate across project phases.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/Mitigation"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T47"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T48"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T49"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T50"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T63">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Proactive Information collection</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by proactively identifying future information needs and relevant actors early in the project lifecycle.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T33"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T19">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Delegation of executive/detail design to contractors</skos:prefLabel>
+    <skos:definition>Uncertainty arising when substantial portions of detailing and executive design are left to contractors (or depend on contractor shop drawings), reducing designer control.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T03"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T32">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Represent and simulate</skos:prefLabel>
+    <skos:definition>A mitigation strategy that reduces uncertainty by constructing explicit representations, often using digital technologies, that make future states, constraints, and consequences visible, explorable, and comparable, without requiring immediate commitment.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/Mitigation"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T51"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T52"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T53"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T54"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T55"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T56"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T26">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Insufficient data for quantitative decision-support models</skos:prefLabel>
+    <skos:definition>Uncertainty arising when quantitative models (e.g. LCA, performance models) rely on input parameters that are unavailable, or highly uncertain. Including the lack of urban-scale information for reliable environmental performance predictions.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T04"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T20">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Price volatility</skos:prefLabel>
+    <skos:definition>Uncertainty arising from market-driven price volatility and the time gap between estimating, procuring, and installing materials/components, which creates cost revision risk and can trigger scope/budget changes.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T07"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <dct:title>Uncertainty Taxonomy</dct:title>
+    <dct:description>Uncertainty Taxonomy</dct:description>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/design-uncertainty/Uncertainty"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/design-uncertainty/Mitigation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T28">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Knowledge loss at handover</skos:prefLabel>
+    <skos:definition>Uncertainty caused by the loss of tacit and explicit knowledge when the design and engineering team leaves after completion, leaving operations and facility management without access to critical project infotmation. Operations and maintenance rely on outdated, incomplete, or unreliable as-built information, particularly in existing buildings with undocumented modifications over time.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T04"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T47">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Contractual formalization</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by explicitly defining selection criteria, contractual scope, roles, responsibilities, and performance obligations within contracting frameworks.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T31"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T16">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Weak design management and design coordination</skos:prefLabel>
+    <skos:definition>Uncertainty arising when design leadership, coordination, and multidisciplinary integration are insufficient</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T03"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T29">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Evidence-based interpretation</skos:prefLabel>
+    <skos:definition>A mitigation strategy that reduces uncertainty by systematically interpreting empirical, contextual, and comparative evidence, rather than assumptions, to inform decisions about requirements, design solutions, and performance.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/Mitigation"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T37"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T38"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T39"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T40"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T30">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Coordinate</skos:prefLabel>
+    <skos:definition>A mitigation strategy that reduces uncertainty by aligning actors, roles, and interpretations so that decisions and information remain coherent across project phases.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/Mitigation"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T41"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T42"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T43"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T44"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T45"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T46"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T65">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Relying on well established methods</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by limiting experimentation in technical and constructive choices, relying on consolidated solutions and selectively allowing innovation only within controlled boundaries.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T34"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T08">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Project realization &amp; feasibility uncertainty</skos:prefLabel>
+    <skos:definition>Uncertainty about whether and when a project can be delivered as intended due to viability, funding, or dependence on external enabling conditions (e.g., infrastructure capacity and connections).</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/Uncertainty"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/Uncertainty">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Uncertainty</skos:prefLabel>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T01"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T02"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T03"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T04"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T05"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T06"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T07"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T08"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+    <skos:topConceptOf rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T11">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Client decision instability</skos:prefLabel>
+    <skos:definition>Uncertainty arising when client decisions change unpredictably over time, sometimes because of misunderstood approved designs or requirements, leading to late corrections and change requests.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T01"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T74">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Compliance Checking</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by systematically verifying that design outputs comply with agreed requirements, specifications, and regulatory frameworks before tendering or execution, preventing deviations and late compliance-related surprises.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T36"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T38">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Market and User Evidence Analysis</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by systematically analyzing observed, measured, or comparable user and market behavior to validate assumptions about requirements, spatial performance, and commercial viability.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T29"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T77"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T03">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Design process uncertainty</skos:prefLabel>
+    <skos:definition>Uncertainty arising from the iterative and evolving nature of the design process, including coordination between stakeholders and systems, and changes in decisions.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/Uncertainty"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T14"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T16"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T17"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T18"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T19"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T22"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T67">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Keep Organizational Knowledge</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by capturing, updating, and reusing institutional knowledge, regulatory learning, project experience, and performance records over time to support future decision-making and actor selection.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T35"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T62">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Strategic Method &amp; Tool Planning</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by deliberately selecting appropriate tools and workflows (e.g., CAD vs. BIM) based on project characteristics such as speed and non-standard conditions.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T33"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T02">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Flexibility and adaptability uncertainty</skos:prefLabel>
+    <skos:definition>Uncertainty related to a building’s ability to accommodate future changes or adapt to evolving needs, technologies, or external conditions over time.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/Uncertainty"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T15"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T06">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Regulatory uncertainty</skos:prefLabel>
+    <skos:definition>Uncertainty arising from statutory requirements, permitting and approvals, interpretation differences, and changes in regulations that constrain design decisions and timelines.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/Uncertainty"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T09"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T01">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Design requirements uncertainty</skos:prefLabel>
+    <skos:definition>Uncertainty arising from unclear or incomplete user requirements.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/Uncertainty"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T10"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T11"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T12"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T27"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T57">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Embedded Adaptability</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by embedding capacity for transformation, reuse, and evolution directly into spatial, technical, and material systems at the design stage, so that future change can occur without disruptive intervention.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T33"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T53">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Use Simulation and visualizations in the construction phase</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty during construction by using digital representations and simulations (e.g., point clouds, 4D sequencing, AR/VR site inspection) to anticipate constraints, visualize site conditions, and improve coordination before and during execution.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T32"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T77">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Maintenance plan</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by verifying maintenance actions for feasibility, durability, and interference with design intent before implementation.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T38"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T04">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Information uncertainty</skos:prefLabel>
+    <skos:definition>Uncertainty arising from incomplete, inaccurate, or inconsistently represented information, particularly due to the processes and models used to represent reality for design decisions, including assumptions, simplifications, and uncertain input parameters.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/Uncertainty"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T23"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T25"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T26"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T28"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T69">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Organizational Asset Tracking for Reuse</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by systematically recording, tracking, and evaluating reusable furniture and components, enabling informed decisions about reuse, adaptation, or replacement during design and refurbishment</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T35"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T40">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Critical human judgement</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by relying on critical human judgment to recognize, interpret, and correct issues that automated tools may miss, rather than depending solely on technical systems</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T29"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T46">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Contractual &amp; Responsibility Alignment</skos:prefLabel>
+    <skos:definition>A mitigation strategy that reduces uncertainty by formally aligning roles, responsibilities, incentives, and long-term obligations between contractual actors (e.g., developers, designers, contractors, operators).</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T30"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T37">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Early stage contextual analysis</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by grounding decisions in detailed analysis of existing physical, historical, environmental, and regulatory conditions, ensuring that design and feasibility judgments are based on verified contextual evidence rather than assumptions.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T29"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T76"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T21">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>External shocks</skos:prefLabel>
+    <skos:definition>Uncertainty arising from unforeseen systemic events, such as pandemics, wars, labor shortages, or contractor suspension, that disrupt markets and institutions, affecting workforce availability, contractor continuity, costs, and schedules.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T07"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/Mitigation">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Mitigation strategy</skos:prefLabel>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T29"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T30"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T31"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T32"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T33"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T34"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T35"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T36"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+    <skos:topConceptOf rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T23">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Missing or unreliable site and execution data</skos:prefLabel>
+    <skos:definition>Uncertainty arising from missing, late, or improperly collected information during construction (e.g., existing conditions, quantities, or as-built data), limiting reliable control over execution.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T04"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T36">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Verification and validation</skos:prefLabel>
+    <skos:definition>A mitigation strategy that reduces uncertainty by systematically checking decisions, actors, designs, and outcomes against explicit criteria, evidence, or reference standards, identifying mismatches early and preventing unverified assumptions from propagating across project phases.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/Mitigation"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T73"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T74"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T75"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T44">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Communication during constrution</skos:prefLabel>
+    <skos:definition>A mitigation strategy that reduces uncertainty during execution by formalizing communication channels and coordination roles on site, ensuring structured information flow and decision control.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T30"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T43">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Multidisciplinary Involvement</skos:prefLabel>
+    <skos:definition>A mitigation strategy that reduces uncertainty by coordinating multidisciplinary expertise early in feasibility stages to interpret constraints and align technical understanding before design decisions are fixed, including technical coordination between different tools.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T30"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T51">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>The use of BIM for design</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by developing and managing structured digital design models (e.g., BIM), enabling clearer visualization, consistency across repetitive elements, traceability of information responsibility, and greater predictability of the final outcome.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T32"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T73">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Partner Qualification</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by verifying the competence, qualifications, and organizational capability of contractors and design teams before engagement or tender award.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T36"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T55">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Buisness plan</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by modeling financial viability and return expectations before design commitments are made.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T32"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T07">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Socio-economic &amp; market uncertainty</skos:prefLabel>
+    <skos:definition>Uncertainty arising from external economic, market, fiscal, geopolitical, and price/availability conditions that affect costs, demand, and project constraints over time.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/Uncertainty"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T13"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T20"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T21"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T24"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T72">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Construction Progress Tracking</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by systematically monitoring and documenting construction progress, approvals, and open issues through structured reporting and supervision mechanisms.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T35"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T18">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Interactive design process</skos:prefLabel>
+    <skos:definition>Uncertainty arising from iterative “ping-pong” negotiation between disciplines, requiring compromises between the vision and whether it is technically/contractually feasible.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T03"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T60">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Technical Exhaustivenes</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by detailed technical resolution, ensuring robustness, and completeness of design solutions.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T33"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T68">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Information documentation</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by progressively collecting, structuring, and validating baseline documentation and contextual knowledge starting from early project phases to avoid informational gaps later.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T35"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T33">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Plan ahead</skos:prefLabel>
+    <skos:definition>A mitigation strategy that reduces uncertainty by anticipating future conditions, transformations, and operational demands during early decision-making, and embedding these expectations into design, technical systems, contracts, and operational strategies so that change, degradation, and evolution can occur without disruptive intervention.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/Mitigation"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T57"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T58"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T59"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T60"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T61"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T62"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T63"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T64"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T54">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Probabalistic modeling</skos:prefLabel>
+    <skos:definition>Mitigates uncertainty by mathematically quantifying the effects of uncertain inputs through probabilistic simulation, producing ranges and confidence intervals rather than single deterministic results</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T32"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T10">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Unclear project objective and needs</skos:prefLabel>
+    <skos:definition>Uncertainty arising when users/clients cannot clearly articulate needs, or from insufficient baseline data about users, demand, and context (e.g., behaviors, needs, projections), reducing confidence in requirement-setting and making the brief incomplete and unstable.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T01"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T25">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Designers’ limited understanding of construction methods</skos:prefLabel>
+    <skos:definition>Uncertainty arising when designers lack sufficient understanding of construction methods, site constraints, and execution realities, leading to design assumptions that prove infeasible or risky during construction.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T04"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T17">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Low quality / incomplete design deliverables at tender</skos:prefLabel>
+    <skos:definition>Uncertainty arising from design outputs that are incomplete, under-specified, or not executable at tender time, which shifts unresolved decisions into execution.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T03"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T48">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Control through requirement structuring</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by explicitly structuring requirements during briefing, translating constraints, sustainability criteria, and known parameters into a stable and enforceable design brief.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T31"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T75">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Performance-in-Use Validation</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by verifying actual spatial or operational performance in use and adjusting assumptions or requirements accordingly.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T36"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T12">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Missrepresented end user</skos:prefLabel>
+    <skos:definition>Uncertainty arising when a developer/brand defines requirements on behalf of an unknown or absent end user, and later end-user involvement triggers significant requirement changes.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T01"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T05">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Performance uncertainty</skos:prefLabel>
+    <skos:definition>Uncertainty about how the building will perform over time in real conditions, including degradation, changing performance expectations, and gaps between predicted and actual performance.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/Uncertainty"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T42">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Structured Client &amp; Brief Alignment</skos:prefLabel>
+    <skos:definition>A mitigation strategy that reduces uncertainty by actively coordinating with clients through iterative dialogue, translation of aspirations into measurable parameters, and tailored communication to build a shared and stable brief.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T30"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T59">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Enable adaptation</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces adaptability uncertainty during the use phase by enabling reversible reconfiguration, refurbishment, and layout changes without structural intervention.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T33"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T27">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Over-committed sales specifications</skos:prefLabel>
+    <skos:definition>Uncertainty arising when marketing or sales teams commit to features or specifications without prior technical, regulatory, or economic validation, forcing the project team to resolve infeasible or unrealistic promises after contracts are signed.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T01"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T64">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Supply chain planning</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces construction uncertainty by planning sourcing, transport timing, and logistics to stabilize cost and schedule risks.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T33"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T39">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Trade-off Analysis</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces design uncertainty by analyzing internal technical criteria (performance, cost, materials, aesthetics) during design to balance trade-offs</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T29"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T15">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Uncertain future needs and uses</skos:prefLabel>
+    <skos:definition>Uncertainty arising from the inability to predict how building uses, functional requirements, and technologies will evolve over the long operational life of the building, which affects early decisions on systems zoning, service distribution, and maintainability.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T02"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T50">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Set performance expectation</skos:prefLabel>
+    <skos:definition>Reduces performance uncertainty by using sustainability certifications (e.g. LEED) as market signals that shape expectations, attract tenants, and justify performance-related investments</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T31"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T56">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>FM BIM</skos:prefLabel>
+    <skos:definition>Reduces performance uncertainty by using BIM as a long-term digital repository for facility management, enabling accurate, up-to-date knowledge of systems, components, and maintenance needs throughout the building’s operational life</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T32"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T58">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Lifecycle &amp; Maintenance Anticipation</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces performance uncertainty by anticipating degradation, operational demands, failure risk, and lifecycle impacts, embedding maintenance logic, energy strategy, and durability considerations into long-term planning.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T33"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T41">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Integrated design coordination</skos:prefLabel>
+    <skos:definition>A mitigation strategy that reduces uncertainty by structurally integrating design and construction expertise through centralized leadership, early contractor involvement, and unified organizational responsibility.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T30"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T34">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Controlled standardization</skos:prefLabel>
+    <skos:definition>A mitigation strategy that reduces uncertainty by predefining technologies, documentation, and processes, relying on consolidated, repeatable, and well-understood practices, while confining experimentation to explicitly controlled areas.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/Mitigation"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T65"/>
+    <skos:narrower rdf:resource="https://w3id.org/design-uncertainty/U_T66"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T52">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Visualization for non experts (users)</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by using visual and immersive representations (e.g., renders, VR) to make design intent accessible to clients and non-experts, enabling informed questioning, clarification, and decision-making during briefing.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T32"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T22">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Working in parallel</skos:prefLabel>
+    <skos:definition>Uncertainty arising from overlapping design, approval, and construction activities in parallel, where unresolved decisions propagate downstream and amplify changes, claims, and rework.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T03"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T45">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>User involvement</skos:prefLabel>
+    <skos:definition>A mitigation strategy that reduces uncertainty by directly involving users and stakeholders in the requirements phase to surface operational realities and avoid late-stage revisions.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T30"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T71">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Design Traceability via Digital Models</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by maintaining a traceable digital record of design evolution and changes (e.g., via BIM), ensuring continuity and clarity during handovers across actors and phases.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T35"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T76">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Technical quality control</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by verifying execution quality against detailed technical drawings and approved samples to ensure fidelity between design intent and built outcome.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T37"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T49">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Decision &amp; Change Governance</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by formalizing decision authority, defining acceptable change ranges, and explicitly quantifying uncertainty levels, thereby preventing uncontrolled ambiguity and escalation across project stages.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T31"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T61">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Early planning</skos:prefLabel>
+    <skos:definition>A mitigation instance that reduces uncertainty by allocating structured time and analytical effort during early programming to clarify scope and optimize decisions before formal commitments.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T33"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/design-uncertainty/U_T24">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Workforce availability, skill level, and turnover</skos:prefLabel>
+    <skos:definition>Uncertainty arising from variability in workforce availability, experience, and skill levels on site, which affects productivity, quality, and schedule reliability.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/design-uncertainty/U_T07"/>
+    <skos:inScheme rdf:resource="https://w3id.org/design-uncertainty"/>
+  </rdf:Description>
+</rdf:RDF>

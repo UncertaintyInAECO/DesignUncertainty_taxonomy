@@ -1,0 +1,2337 @@
+[
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T58",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T33"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces performance uncertainty by anticipating degradation, operational demands, failure risk, and lifecycle impacts, embedding maintenance logic, energy strategy, and durability considerations into long-term planning."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Lifecycle & Maintenance Anticipation"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T67",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T35"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by capturing, updating, and reusing institutional knowledge, regulatory learning, project experience, and performance records over time to support future decision-making and actor selection."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Keep Organizational Knowledge"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T55",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T32"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by modeling financial viability and return expectations before design commitments are made."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Buisness plan"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T34",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/Mitigation"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation strategy that reduces uncertainty by predefining technologies, documentation, and processes, relying on consolidated, repeatable, and well-understood practices, while confining experimentation to explicitly controlled areas."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T65"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T66"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Controlled standardization"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T13",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T07"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty arising from shifting market conditions (demand, expectations, price volatility, sector trends) that force changes in targets, specifications."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Market volatility"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T01",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/Uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty arising from unclear or incomplete user requirements."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T10"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T11"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T12"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T27"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Design requirements uncertainty"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T29",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/Mitigation"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation strategy that reduces uncertainty by systematically interpreting empirical, contextual, and comparative evidence, rather than assumptions, to inform decisions about requirements, design solutions, and performance."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T37"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T38"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T39"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T40"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Evidence-based interpretation"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T19",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T03"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty arising when substantial portions of detailing and executive design are left to contractors (or depend on contractor shop drawings), reducing designer control."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Delegation of executive/detail design to contractors"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T06",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/Uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty arising from statutory requirements, permitting and approvals, interpretation differences, and changes in regulations that constrain design decisions and timelines."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T09"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Regulatory uncertainty"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T22",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T03"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty arising from overlapping design, approval, and construction activities in parallel, where unresolved decisions propagate downstream and amplify changes, claims, and rework."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Working in parallel"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T32",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/Mitigation"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation strategy that reduces uncertainty by constructing explicit representations, often using digital technologies, that make future states, constraints, and consequences visible, explorable, and comparable, without requiring immediate commitment."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T51"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T52"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T53"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T54"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T55"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T56"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Represent and simulate"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T31",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/Mitigation"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation strategy that reduces uncertainty by explicitly fixing reference points, boundaries, and decision criteri such as requirements, scopes, roles, thresholds, and contractual conditions so that ambiguity does not propagate across project phases."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T47"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T48"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T49"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T50"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Define ans formalize"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T25",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T04"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty arising when designers lack sufficient understanding of construction methods, site constraints, and execution realities, leading to design assumptions that prove infeasible or risky during construction."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Designers’ limited understanding of construction methods"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T20",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T07"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty arising from market-driven price volatility and the time gap between estimating, procuring, and installing materials/components, which creates cost revision risk and can trigger scope/budget changes."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Price volatility"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T30",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/Mitigation"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation strategy that reduces uncertainty by aligning actors, roles, and interpretations so that decisions and information remain coherent across project phases."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T41"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T42"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T43"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T44"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T45"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T46"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Coordinate"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T60",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T33"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by detailed technical resolution, ensuring robustness, and completeness of design solutions."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Technical Exhaustivenes"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T61",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T33"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by allocating structured time and analytical effort during early programming to clarify scope and optimize decisions before formal commitments."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Early planning"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T02",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/Uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty related to a building’s ability to accommodate future changes or adapt to evolving needs, technologies, or external conditions over time."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T15"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Flexibility and adaptability uncertainty"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T04",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/Uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty arising from incomplete, inaccurate, or inconsistently represented information, particularly due to the processes and models used to represent reality for design decisions, including assumptions, simplifications, and uncertain input parameters."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T23"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T25"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T26"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T28"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Information uncertainty"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T49",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T31"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by formalizing decision authority, defining acceptable change ranges, and explicitly quantifying uncertainty levels, thereby preventing uncontrolled ambiguity and escalation across project stages."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Decision & Change Governance"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T10",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T01"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty arising when users/clients cannot clearly articulate needs, or from insufficient baseline data about users, demand, and context (e.g., behaviors, needs, projections), reducing confidence in requirement-setting and making the brief incomplete and unstable."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Unclear project objective and needs"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T43",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T30"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation strategy that reduces uncertainty by coordinating multidisciplinary expertise early in feasibility stages to interpret constraints and align technical understanding before design decisions are fixed, including technical coordination between different tools."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Multidisciplinary Involvement"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T16",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T03"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty arising when design leadership, coordination, and multidisciplinary integration are insufficient"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Weak design management and design coordination"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T53",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T32"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty during construction by using digital representations and simulations (e.g., point clouds, 4D sequencing, AR/VR site inspection) to anticipate constraints, visualize site conditions, and improve coordination before and during execution."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Use Simulation and visualizations in the construction phase"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T70",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T35"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by providing standardized, structured lifecycle information (e.g., Digital Product Passports) about materials and components, supporting circular design and end-of-life decision-making."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Standardized Lifecycle Information Systems"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T71",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T35"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by maintaining a traceable digital record of design evolution and changes (e.g., via BIM), ensuring continuity and clarity during handovers across actors and phases."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Design Traceability via Digital Models"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T41",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T30"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation strategy that reduces uncertainty by structurally integrating design and construction expertise through centralized leadership, early contractor involvement, and unified organizational responsibility."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Integrated design coordination"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T45",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T30"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation strategy that reduces uncertainty by directly involving users and stakeholders in the requirements phase to surface operational realities and avoid late-stage revisions."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "User involvement"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T07",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/Uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty arising from external economic, market, fiscal, geopolitical, and price/availability conditions that affect costs, demand, and project constraints over time."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T13"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T20"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T21"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T24"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Socio-economic & market uncertainty"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T51",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T32"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by developing and managing structured digital design models (e.g., BIM), enabling clearer visualization, consistency across repetitive elements, traceability of information responsibility, and greater predictability of the final outcome."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "The use of BIM for design"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T48",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T31"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by explicitly structuring requirements during briefing, translating constraints, sustainability criteria, and known parameters into a stable and enforceable design brief."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Control through requirement structuring"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T05",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/Uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty about how the building will perform over time in real conditions, including degradation, changing performance expectations, and gaps between predicted and actual performance."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Performance uncertainty"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T27",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T01"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty arising when marketing or sales teams commit to features or specifications without prior technical, regulatory, or economic validation, forcing the project team to resolve infeasible or unrealistic promises after contracts are signed."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Over-committed sales specifications"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T18",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T03"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty arising from iterative “ping-pong” negotiation between disciplines, requiring compromises between the vision and whether it is technically/contractually feasible."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Interactive design process"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T68",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T35"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by progressively collecting, structuring, and validating baseline documentation and contextual knowledge starting from early project phases to avoid informational gaps later."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Information documentation"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T75",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T36"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by verifying actual spatial or operational performance in use and adjusting assumptions or requirements accordingly."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Performance-in-Use Validation"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T21",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T07"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty arising from unforeseen systemic events, such as pandemics, wars, labor shortages, or contractor suspension, that disrupt markets and institutions, affecting workforce availability, contractor continuity, costs, and schedules."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "External shocks"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T37",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T29"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by grounding decisions in detailed analysis of existing physical, historical, environmental, and regulatory conditions, ensuring that design and feasibility judgments are based on verified contextual evidence rather than assumptions."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T76"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Early stage contextual analysis"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/Mitigation",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T29"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T30"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T31"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T32"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T33"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T34"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T35"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T36"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Mitigation strategy"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T40",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T29"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by relying on critical human judgment to recognize, interpret, and correct issues that automated tools may miss, rather than depending solely on technical systems"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Critical human judgement"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T09",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T06"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty about the timing and conditions of permits, including late or changing authority demands."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Permitting timeline unpredictability"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T24",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T07"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty arising from variability in workforce availability, experience, and skill levels on site, which affects productivity, quality, and schedule reliability."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Workforce availability, skill level, and turnover"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T76",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T37"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by verifying execution quality against detailed technical drawings and approved samples to ensure fidelity between design intent and built outcome."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Technical quality control"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T11",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T01"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty arising when client decisions change unpredictably over time, sometimes because of misunderstood approved designs or requirements, leading to late corrections and change requests."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Client decision instability"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T28",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T04"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty caused by the loss of tacit and explicit knowledge when the design and engineering team leaves after completion, leaving operations and facility management without access to critical project infotmation. Operations and maintenance rely on outdated, incomplete, or unreliable as-built information, particularly in existing buildings with undocumented modifications over time."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Knowledge loss at handover"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T73",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T36"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by verifying the competence, qualifications, and organizational capability of contractors and design teams before engagement or tender award."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Partner Qualification"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T03",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/Uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty arising from the iterative and evolving nature of the design process, including coordination between stakeholders and systems, and changes in decisions."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T14"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T16"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T17"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T18"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T19"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T22"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Design process uncertainty"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T26",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T04"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty arising when quantitative models (e.g. LCA, performance models) rely on input parameters that are unavailable, or highly uncertain. Including the lack of urban-scale information for reliable environmental performance predictions."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Insufficient data for quantitative decision-support models"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T47",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T31"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by explicitly defining selection criteria, contractual scope, roles, responsibilities, and performance obligations within contracting frameworks."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Contractual formalization"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T38",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T29"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by systematically analyzing observed, measured, or comparable user and market behavior to validate assumptions about requirements, spatial performance, and commercial viability."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T77"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Market and User Evidence Analysis"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T46",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T30"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation strategy that reduces uncertainty by formally aligning roles, responsibilities, incentives, and long-term obligations between contractual actors (e.g., developers, designers, contractors, operators)."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Contractual & Responsibility Alignment"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T64",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T33"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces construction uncertainty by planning sourcing, transport timing, and logistics to stabilize cost and schedule risks."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Supply chain planning"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T14",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T03"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty arising from the non-repeatable nature of design work, where requirements cannot be deterministically mapped to solutions and must be continuously interpreted and negotiated during the process, especially with the client."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Project uniqueness"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T39",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T29"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces design uncertainty by analyzing internal technical criteria (performance, cost, materials, aesthetics) during design to balance trade-offs"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Trade-off Analysis"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T63",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T33"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by proactively identifying future information needs and relevant actors early in the project lifecycle."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Proactive Information collection"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T33",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/Mitigation"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation strategy that reduces uncertainty by anticipating future conditions, transformations, and operational demands during early decision-making, and embedding these expectations into design, technical systems, contracts, and operational strategies so that change, degradation, and evolution can occur without disruptive intervention."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T57"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T58"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T59"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T60"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T61"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T62"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T63"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T64"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Plan ahead"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T23",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T04"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty arising from missing, late, or improperly collected information during construction (e.g., existing conditions, quantities, or as-built data), limiting reliable control over execution."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Missing or unreliable site and execution data"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T12",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T01"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty arising when a developer/brand defines requirements on behalf of an unknown or absent end user, and later end-user involvement triggers significant requirement changes."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Missrepresented end user"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T36",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/Mitigation"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation strategy that reduces uncertainty by systematically checking decisions, actors, designs, and outcomes against explicit criteria, evidence, or reference standards, identifying mismatches early and preventing unverified assumptions from propagating across project phases."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T73"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T74"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T75"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Verification and validation"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T62",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T33"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by deliberately selecting appropriate tools and workflows (e.g., CAD vs. BIM) based on project characteristics such as speed and non-standard conditions."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Strategic Method & Tool Planning"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T54",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T32"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Mitigates uncertainty by mathematically quantifying the effects of uncertain inputs through probabilistic simulation, producing ranges and confidence intervals rather than single deterministic results"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Probabalistic modeling"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T17",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T03"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty arising from design outputs that are incomplete, under-specified, or not executable at tender time, which shifts unresolved decisions into execution."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Low quality / incomplete design deliverables at tender"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T50",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T31"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Reduces performance uncertainty by using sustainability certifications (e.g. LEED) as market signals that shape expectations, attract tenants, and justify performance-related investments"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Set performance expectation"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T59",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T33"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces adaptability uncertainty during the use phase by enabling reversible reconfiguration, refurbishment, and layout changes without structural intervention."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Enable adaptation"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T77",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T38"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by verifying maintenance actions for feasibility, durability, and interference with design intent before implementation."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Maintenance plan"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T42",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T30"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation strategy that reduces uncertainty by actively coordinating with clients through iterative dialogue, translation of aspirations into measurable parameters, and tailored communication to build a shared and stable brief."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Structured Client & Brief Alignment"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T35",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/Mitigation"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation strategy that reduces uncertainty by systematically recording, updating, and preserving information, decisions, and experience over time, ensuring traceability, continuity, and reuse of knowledge across project phases, actors, and lifecycle stages."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T67"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T68"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T69"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T70"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T71"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T72"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Track and preserve information"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T56",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T32"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Reduces performance uncertainty by using BIM as a long-term digital repository for facility management, enabling accurate, up-to-date knowledge of systems, components, and maintenance needs throughout the building’s operational life"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FM BIM"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T74",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T36"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by systematically verifying that design outputs comply with agreed requirements, specifications, and regulatory frameworks before tendering or execution, preventing deviations and late compliance-related surprises."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Compliance Checking"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T15",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T02"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty arising from the inability to predict how building uses, functional requirements, and technologies will evolve over the long operational life of the building, which affects early decisions on systems zoning, service distribution, and maintainability."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Uncertain future needs and uses"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T66",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T34"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by structuring documentation, workflows, and organizational processes into replicable, predictable, and transparent frameworks that guide project development over time."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Process Standardization"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T65",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T34"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by limiting experimentation in technical and constructive choices, relying on consolidated solutions and selectively allowing innovation only within controlled boundaries."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Relying on well established methods"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T08",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/Uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Uncertainty about whether and when a project can be delivered as intended due to viability, funding, or dependence on external enabling conditions (e.g., infrastructure capacity and connections)."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Project realization & feasibility uncertainty"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T72",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T35"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by systematically monitoring and documenting construction progress, approvals, and open issues through structured reporting and supervision mechanisms."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Construction Progress Tracking"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T57",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T33"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by embedding capacity for transformation, reuse, and evolution directly into spatial, technical, and material systems at the design stage, so that future change can occur without disruptive intervention."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Embedded Adaptability"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "Uncertainty Taxonomy"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "Uncertainty Taxonomy"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#hasTopConcept": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/Uncertainty"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/Mitigation"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T52",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T32"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by using visual and immersive representations (e.g., renders, VR) to make design intent accessible to clients and non-experts, enabling informed questioning, clarification, and decision-making during briefing."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Visualization for non experts (users)"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T44",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T30"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation strategy that reduces uncertainty during execution by formalizing communication channels and coordination roles on site, ensuring structured information flow and decision control."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Communication during constrution"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/Uncertainty",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T01"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T02"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T03"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T04"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T05"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T06"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T07"
+      },
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T08"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/design-uncertainty/U_T69",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/design-uncertainty/U_T35"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mitigation instance that reduces uncertainty by systematically recording, tracking, and evaluating reusable furniture and components, enabling informed decisions about reuse, adaptation, or replacement during design and refurbishment"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/design-uncertainty"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Organizational Asset Tracking for Reuse"
+      }
+    ]
+  }
+]
