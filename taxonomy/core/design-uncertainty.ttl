@@ -20,8 +20,12 @@
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 
 <https://w3id.org/design-uncertainty> a skos:ConceptScheme;
-  dct:title "Uncertainty Taxonomy";
-  dct:description "Uncertainty Taxonomy";
+  skos:prefLabel "Design Uncertainty Taxonomy"@en ;
+  skos:definition "A SKOS concept scheme for design uncertainty and mitigation concepts in building projects."@en ;
+  dct:creator "Bloch, T.; Isaac, S.; Boscariol, M.; Waltzer, A.; Tagliabue, L.C."@en ;
+  dct:created "2026-06-27"^^xsd:date ;
+  dct:language "en" ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
   skos:hasTopConcept <https://w3id.org/design-uncertainty/Uncertainty>, <https://w3id.org/design-uncertainty/Mitigation> .
 
 <https://w3id.org/design-uncertainty/Uncertainty> a skos:Concept;
