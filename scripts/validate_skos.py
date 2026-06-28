@@ -2,6 +2,7 @@
 
 from pathlib import Path
 from collections import defaultdict
+import re
 import sys
 
 from rdflib import Graph, Namespace
@@ -37,6 +38,14 @@ def qname_or_str(graph: Graph, node):
         return str(node)
 
 
+def is_taxonomy_concept(graph: Graph, node) -> bool:
+    if (node, RDF.type, SKOS.Concept) not in graph:
+        return False
+
+    uri = str(node)
+    return bool(re.search(r"/U_T\d+$", uri)) or uri.endswith("/Uncertainty") or uri.endswith("/Mitigation")
+
+
 def check_core(core: Graph):
     schemes = list(core.subjects(RDF.type, SKOS.ConceptScheme))
     if not schemes:
@@ -44,7 +53,7 @@ def check_core(core: Graph):
     elif len(schemes) > 1:
         warnings.append(f"Core file: multiple ConceptSchemes found ({len(schemes)}).")
 
-    concepts = set(core.subjects(RDF.type, SKOS.Concept))
+    concepts = {c for c in core.subjects(RDF.type, SKOS.Concept) if is_taxonomy_concept(core, c)}
     if not concepts:
         errors.append("Core file: no skos:Concept found.")
 
@@ -91,7 +100,7 @@ def check_core(core: Graph):
 
 
 def check_extension(ext: Graph):
-    concepts = set(ext.subjects(RDF.type, SKOS.Concept))
+    concepts = {c for c in ext.subjects(RDF.type, SKOS.Concept) if is_taxonomy_concept(ext, c)}
     if not concepts:
         warnings.append("Extension file: no skos:Concept found.")
 
@@ -102,8 +111,8 @@ def check_extension(ext: Graph):
 
 
 def check_alignment(core: Graph, ext: Graph):
-    core_concepts = set(core.subjects(RDF.type, SKOS.Concept))
-    ext_concepts = set(ext.subjects(RDF.type, SKOS.Concept))
+    core_concepts = {c for c in core.subjects(RDF.type, SKOS.Concept) if is_taxonomy_concept(core, c)}
+    ext_concepts = {c for c in ext.subjects(RDF.type, SKOS.Concept) if is_taxonomy_concept(ext, c)}
 
     only_in_ext = sorted(ext_concepts - core_concepts, key=str)
     if only_in_ext:

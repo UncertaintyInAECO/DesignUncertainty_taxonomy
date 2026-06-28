@@ -30,6 +30,7 @@
 
 <https://w3id.org/design-uncertainty/Uncertainty> a skos:Concept;
   skos:prefLabel "Uncertainty";
+  skos:definition "Top-level concept grouping the main classes of design uncertainty.";
   skos:narrower <https://w3id.org/design-uncertainty/U_T01>, <https://w3id.org/design-uncertainty/U_T02>,
     <https://w3id.org/design-uncertainty/U_T03>, <https://w3id.org/design-uncertainty/U_T04>,
     <https://w3id.org/design-uncertainty/U_T05>, <https://w3id.org/design-uncertainty/U_T06>,
@@ -218,6 +219,7 @@
 
 <https://w3id.org/design-uncertainty/Mitigation> a skos:Concept;
   skos:prefLabel "Mitigation strategy";
+  skos:definition "Top-level concept grouping mitigation strategies that reduce design uncertainty.";
   skos:narrower <https://w3id.org/design-uncertainty/U_T29>, <https://w3id.org/design-uncertainty/U_T30>,
     <https://w3id.org/design-uncertainty/U_T31>, <https://w3id.org/design-uncertainty/U_T32>,
     <https://w3id.org/design-uncertainty/U_T33>, <https://w3id.org/design-uncertainty/U_T34>,
